@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+    #textani {
+      transform: translateY(50px);
+      filter: blur(20px);
+      opacity: 0;
+      animation: textblur 0.5s 1s linear 1 forwards;
+    }
+
+    @keyframes textblur {
+      to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body style="font-family: poppins" class="  bg-[#002233]   text-white m-0">
+
+  <!-- header -->
+  <header class="text-white relative z-10">
+    <nav class="flex items-center justify-between p-4">
+      <a href="index.html" class="text-2xl font-bold flex-shrink-0 text-black hover:text-blue-200"
+        style="text-shadow: 0px 0px 10px cyan, 0px 0px 20px cyan, 0px 0px 40px cyan, 0px 0px 80px cyan;">Wander Way</a>
+
+      <div class="flex items-center">
+        <input type="text" placeholder="Search..."
+          class="px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-400 text-black" />
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600">Search</button>
+      </div>
+
+      <!-- Menu Button (visible on small screens) -->
+      <button id="menu-btn" class="md:hidden flex items-center text-white hover:text-blue-400 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <!-- Menu Links (visible on medium and larger screens) -->
+      <div id="menu-links"
+        class="hidden flex-col space-y-4 md:flex md:flex-row md:space-x-6 md:space-y-0 md:items-center font-bold text-2xl text-black"
+        style="text-shadow: 0px 0px 10px cyan , 0px 0px 20px cyan ,0px 0px 40px cyan ,0px 0px 80px cyan;">
+        <a href="#" class="hover:text-blue-200">Home</a>
+        <a href="#" class="hover:text-blue-200">Trips</a>
+        <a href="#" class="hover:text-blue-200">Shop</a>
+        <a href="#" class="hover:text-blue-200">Contact</a>
+        <a href="#" class="hover:text-blue-200">Blog</a>
+        <a href="#" id="loginBtn" class="hover:text-blue-200">login</a>
+        <a href="#" class="hover:text-blue-200">PL</a>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- carousel -->
+  <div id="next" class="w-[100vw] h-[100vh] overflow-hidden mt-[-68px] relative inset-0">
+    <div id="carousel">
+      <!-- Existing Carousel Items -->
+      <!-- Additional Carousel Items -->
+      <div class="carousel-item">
+        <img class="w-[1510px] h-[710px] object-cover" src="img/palace-communication-summer-dusk-madrid.jpg" alt="" />
+        <div
+          class="absolute top-[40%] w-[1000px] max-w-[80%] left-[350px] transform -translate-x-1/4 pr-[30%] box-border text-[#4cc9f0]">
+          <div class="absolute backdrop-blur-sm bg-black/30 -z-10 rounded-lg">
+            <div id="textani"
+              class="font-bold text-[3em] leading-[1.5em] text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500">
+              The Royal Palace of Madrid
+            </div>
+            <div id="textani" class="hidden min-[901px]:block text-[#b4c5e4]">
+              The Royal Palace of Madrid is a must-visit for its stunning architecture, rich history, and royal charm.
+              <br> Explore grand halls, the Throne Room, and the Royal Armory, while admiring artworks by Goya and
+              Velázquez. <br> Don’t miss the beautiful Sabatini Gardens and Campo del Moro, perfect for a peaceful
+              stroll and great photos. <br> A true highlight of Madrid!
+
+            </div>
+            <div id="textani"
+              class="grid grid-cols-[130px_130px] grid-rows-[40px] gap-[5px] mt-[28px] text-[#F8FF00] font-bold text-[20px]">
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                see more
+              </button>
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                book now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Existing Carousel Items -->
+      <div class="carousel-item">
+        <img class="w-[1510px] h-[710px] object-cover"
+          src="img/fuji-mountain-kawaguchiko-lake-morning-autumn-seasons-fuji-mountain-yamanachi-japan.jpg" alt="" />
+        <div
+          class="absolute top-[40%] w-[1000px] max-w-[80%] left-[350px] transform -translate-x-1/4 pr-[30%] box-border">
+
+          <div class="absolute  backdrop-blur-sm  bg-white/30 -z-10 rounded-lg">
+
+            <div id="textani" class="font-bold text-[5em] leading-[1.5em] text-[#3a0ca3]">
+              Mount Fuji
+            </div>
+            <div id="textani" class=" text-black  font-bold  hidden min-[901px]:block">
+              Mount Fuji: Japan's iconic volcano and UNESCO site,<br> known for its perfect cone shape. <br> A
+              must-visit for
+              stunning views, hiking, <br>and picturesque spots like Lake Kawaguchi and Chureito Pagoda.
+            </div>
+            <div id="textani"
+              class="grid grid-cols-[130px_130px] grid-rows-[40px] gap-[5px] mt-[28px] text-[#F8FF00] font-bold text-[20px]">
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                see more
+              </button>
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                book now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Existing Carousel Items -->
+      <div class="carousel-item">
+        <img class="w-[1510px] h-[710px] object-cover" src="img/shiraito-waterfall-japan.jpg" alt="" />
+        <div
+          class="absolute top-[20%] w-[1000px] max-w-[80%] left-1/4 transform -translate-x-1/4 pr-[30%] box-border text-white">
+          <div class="absolute  backdrop-blur-sm bg-black/30 -z-10 rounded-lg">
+
+            <div id="textani" class="font-bold text-[5em] leading-[1.5em]">
+              City Name 3
+            </div>
+            <div id="textani" class="hidden min-[901px]:block">
+              Explore the stunning architecture of Madrid with its magnificent palaces.
+            </div>
+            <div id="textani"
+              class="grid grid-cols-[130px_130px] grid-rows-[40px] gap-[5px] mt-[28px] text-[#F8FF00] font-bold text-[20px]">
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                see more
+              </button>
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                book now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Existing Carousel Items -->
+      <div class="carousel-item">
+        <img class="w-[1510px] h-[710px] object-cover" src="img/beautiful-natural-landscape_23-2151922786.jpg" alt="" />
+        <div
+          class="absolute top-[20%] w-[1000px] max-w-[80%] left-1/4 transform -translate-x-1/4 pr-[30%] box-border text-white">
+          <div class="absolute  backdrop-blur-sm bg-black/30 -z-10 rounded-lg">
+            <div id="textani" class="font-bold text-[5em] leading-[1.5em]">
+              City Name 4
+            </div>
+            <div id="textani" class="hidden min-[901px]:block">
+              A breathtaking natural landscape featuring mountains, lakes, and forests.
+            </div>
+            <div id="textani"
+              class="grid grid-cols-[130px_130px] grid-rows-[40px] gap-[5px] mt-[28px] text-[#F8FF00] font-bold text-[20px]">
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                see more
+              </button>
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                book now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Added Items -->
+      <div class="carousel-item">
+        <img class="w-[1510px] h-[710px] object-cover" src="img/new-image-1.jpg" alt="" />
+        <div
+          class="absolute top-[20%] w-[1000px] max-w-[80%] left-1/4 transform -translate-x-1/4 pr-[30%] box-border text-white">
+          <div class="absolute  backdrop-blur-sm bg-black/30 -z-10 rounded-lg">
+            <div id="textani" class="font-bold text-[5em] leading-[1.5em]">
+              City Name 5
+            </div>
+            <div id="textani" class="hidden min-[901px]:block">
+              A description of the new image showcasing a city in the midst of nature.
+            </div>
+            <div id="textani"
+              class="grid grid-cols-[130px_130px] grid-rows-[40px] gap-[5px] mt-[28px] text-[#F8FF00] font-bold text-[20px]">
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                see more
+              </button>
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                book now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Existing Carousel Items -->
+      <div class="carousel-item">
+        <img class="w-[1510px] h-[710px] object-cover" src="img/new-image-2.jpg" alt="" />
+        <div
+          class="absolute top-[20%] w-[1000px] max-w-[80%] left-1/4 transform -translate-x-1/4 pr-[30%] box-border text-white">
+          <div class="absolute  backdrop-blur-sm bg-black/30 -z-10 rounded-lg">
+            <div id="textani" class="font-bold text-[5em] leading-[1.5em]">
+              City Name 6
+            </div>
+            <div id="textani" class="hidden min-[901px]:block">
+              A beautiful, serene cityscape offering stunning views of the skyline.
+            </div>
+            <div id="textani"
+              class="grid grid-cols-[130px_130px] grid-rows-[40px] gap-[5px] mt-[28px] text-[#F8FF00] font-bold text-[20px]">
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                see more
+              </button>
+              <button class="transition duration-[5000] hover:text-[#219ebc]">
+                book now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Control Buttons -->
+    <div class="absolute top-[88%] right-[65%] w-[300px] max-w-[30%] flex gap-[10px] items-center z-[999]">
+      <button id="prev-btn"
+        class="w-[50px] h-[50px] rounded-[50%] bg-[#eee4] text-[#fff] border-none font-bold text-lg transition duration-[5000] hover:bg-[#eee] hover:text-[#555]">
+        < </button>
+          <button id="next-btn"
+            class="w-[50px] h-[50px] rounded-[50%] bg-[#eee4] text-[#fff] border-none font-bold text-lg transition duration-[5000] hover:bg-[#eee] hover:text-[#555]">
+            >
+          </button>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Trips Categories  -->
+  <section class="px-4 py-8">
+
+    <div>
+      <h1
+        class="text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500">
+        "Get Ready for Adventure—Top Quality, Friendly Prices!"
+
+      </h1>
+    </div>
+    <br><br>
+    <div class="flex items-center justify-center gap-5 ">
+      <h1
+        class="text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500">
+        Categories
+      </h1>
+
+      <button
+        class="px-6 py-3 text-white text-lg font-semibold rounded-full border-2 bg-sky-500 hover:bg-sky-700 hover:scale-110 transform transition duration-300 ease-in-out">
+        More
+      </button>
+    </div>
+
+    <br><br><br>
+
+
+    <div class="container mx-auto">
+      <!-- Grid Container -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <!-- Single Div with Image and Text -->
+        <a href="#" class="group">
+          <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/female-tourists-spread-their-arms-held-their-wings_1150-7462.jpg" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Solo Travel</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/istockphoto-851930128-612x612.jpg" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Family Tours</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/traveling-with-off-road-car_23-2151473062.jpg" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Adventure Trips</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/couple-love-romantic-hugs-sand-desert-evening-romantic-atmosphere-sand-burn-candles-form-heart_105751-1306.avif" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Honeymoon Packages</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/portrait-senior-man-with-camera-device-world-photography-day-celebration_23-2151657219.avif" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Cultural Tours</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/crossroad-car-safari-scene_23-2151822304.avif" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Wildlife Safaris</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div
+            class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/rush-people-beautiful-kedarnath-temple-uttarakhand-01-sep-2023-shri-kedarnath-temple-dedicated-lord-shiva-rudraprayag-district-uttarakhand-india_181020-6510.jpg" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">pilgrimage Tours</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div
+            class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/man-with-backpack-hiking-down-mountain_226410-15.avif" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Trekking & Hiking</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div
+            class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/people-walking-path_1048944-9488313.avif" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Luxury Travel</span>
+            </div>
+          </div>
+        </a>
+
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div
+            class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/female-traveller-with-map-binoculars_23-2147654237.avif" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Foreign Tours</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div
+            class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/travel-budget-concept-coins-glass-jar-earth-globe-compass-with-copy-space-text_577978-3.avif" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Budget Trips</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Repeat the above block for 12 images -->
+        <a href="#" class="group">
+          <div
+            class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+            <!-- Image: The image will become fully rounded on hover -->
+            <img src="img/beautiful-landscape-beach-sea-ocean-with-empty-chair-deck-umbrella-nearly-coconut-palm-tree-with-white-cloud-blue-sky_74190-9981.avif" alt="Image"
+              class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+              <span class="text-sm font-medium">Beach Vacations </span>
+            </div>
+          </div>
+        </a>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <br><br><br>
+
+
+
+
+  <!-- up coming 1-->
+  <section>
+
+    <div class="flex items-center justify-center gap-5 ">
+      <h1
+        class="text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500">
+        up coming
+      </h1>
+
+      <button
+        class="px-5 py-2 text-white text-lg font-semibold rounded-full border-2 bg-sky-500 hover:bg-sky-700 hover:scale-110 transform transition duration-300 ease-in-out">
+        book now
+      </button>
+    </div>
+    <br><br><br>
+
+    <div>
+      <h1
+        class="text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500">
+        Escape the Ordinary, Embrace the Adventure:
+        <span
+          class="text-4xl font-semibold text-blue-500 underline hover:text-sky-400 transition duration-300 ease-in-out">Paris,France</span>
+      </h1>
+
+    </div>
+
+
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <!-- Text Section (Left) -->
+        <div class="w-full md:w-1/2 p-4 text-white text-lg leading-relaxed ">
+          Paris, the capital of France, is famously known as the "City of Light" and a global hub for art, fashion, culture, and romance. It boasts iconic landmarks like the Eiffel Tower, Notre-Dame Cathedral, the Louvre Museum, and the charming streets of Montmartre. Renowned for its elegant architecture, Paris is a blend of history and modernity, with the Seine River adding a picturesque charm. The city is also celebrated for its café culture, gourmet cuisine, and high-end shopping along the Champs-Élysées. Whether exploring its art galleries, strolling through lush gardens like Luxembourg, or enjoying the vibrant nightlife, Paris offers a timeless and unforgettable experience.
+        </div>
+
+        <!-- Image Section (Right) -->
+        <div class="w-full md:w-1/2 p-4 group relative">
+          <img src="img/famous-terreaux-square-lyon-city-by-night-france_268835-1081.jpg" alt="Lone Tree"
+            class="w-full h-auto rounded-lg transition duration-300 group-hover:opacity-0">
+          <div
+            class="absolute inset-0 bg-cover bg-center rounded-lg transition duration-300 opacity-0 group-hover:opacity-100"
+            style="background-image: url('img/beautiful-wide-shot-eiffel-tower-paris-surrounded-by-water-with-ships-colorful-sky_181624-5118.jpg');"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<br><br>
+  <!-- up coming 2-->
+<br><br>
+
+<section>
+  <div class="flex items-center justify-center gap-5 ">
+    <h1
+      class="text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500">
+      up coming
+    </h1>
+
+    <button
+      class="px-5 py-2 text-white text-lg font-semibold rounded-full border-2 bg-sky-500 hover:bg-sky-700 hover:scale-110 transform transition duration-300 ease-in-out">
+      book now
+    </button>
+  </div>
+  <br><br>
+  <div>
+    <h1
+      class="text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500">
+      "The City of Lakes, Love, and Royal Elegance!":
+      <span
+        class="text-4xl font-semibold text-blue-500 underline hover:text-sky-400 transition duration-300 ease-in-out">Udaipur, India</span>
+    </h1>
+
+  </div>
+</section>
+
+  <section>
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <!-- Image Section (Left) -->
+        <div class="w-full md:w-1/2 p-4 group relative">
+          <img src="img/indian-city-scene_23-2151823026.jpg" alt="Lone Tree"
+            class="w-full h-auto rounded-lg transition duration-300 group-hover:opacity-0">
+          <div
+            class="absolute inset-0 bg-cover bg-center rounded-lg transition duration-300 opacity-0 group-hover:opacity-100"
+            style="background-image: url('img/indian-city-buildings-scene_23-2151823119.jpg');"></div>
+        </div>
+
+        <!-- Text Section (Right) -->
+        <div class="w-full md:w-1/2 p-4 text-white text-lg leading-relaxed">
+          Udaipur, often called the "City of Lakes," is a stunning gem in Rajasthan, India, known for its royal charm and scenic beauty. Surrounded by the Aravalli Hills, the city is famous for its tranquil lakes, including Lake Pichola, Fateh Sagar, and Udai Sagar. Udaipur’s grandeur shines through its magnificent palaces, such as the City Palace and the Lake Palace, which now serves as a luxury hotel. The city offers a blend of Rajasthani culture, vibrant markets, and traditional cuisine, all wrapped in a romantic ambiance. With its breathtaking sunsets, historic temples, and picturesque gardens like Saheliyon-ki-Bari, Udaipur promises a royal and serene escape.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<br><br>
+  <!-- up coming 3-->
+   <br><br>
+
+<section>
+  <div class="flex items-center justify-center gap-5 ">
+    <h1
+      class="text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500">
+      up coming
+    </h1>
+
+    <button
+      class="px-5 py-2 text-white text-lg font-semibold rounded-full border-2 bg-sky-500 hover:bg-sky-700 hover:scale-110 transform transition duration-300 ease-in-out">
+      book now
+    </button>
+  </div>
+  <br><br>
+  <div>
+    <h1
+      class="text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500">
+      "Where Adventure Meets Paradise!":
+      <span
+        class="text-4xl font-semibold text-blue-500 underline hover:text-sky-400 transition duration-300 ease-in-out">New Zealand</span>
+    </h1>
+  </section>
+
+  <section>
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <!-- Text Section (Left) -->
+        <div class="w-full md:w-1/2 p-4 text-white text-lg leading-relaxed">
+          New Zealand, a breathtaking island nation in the Pacific Ocean, is a paradise for nature lovers and adventure seekers. Known for its stunning landscapes, the country boasts majestic mountains, pristine beaches, lush forests, and serene lakes. The North Island features geothermal wonders like Rotorua and vibrant cities like Auckland and Wellington, while the South Island is famed for its dramatic fjords, glaciers, and adventure hubs like Queenstown. New Zealand is also rich in Maori culture, offering unique traditions and hospitality. Whether exploring the Hobbiton movie set, hiking in Fiordland National Park, or relaxing by Lake Tekapo, New Zealand is a haven of natural beauty and unforgettable experiences.
+        </div>
+
+        <!-- Image Section (Right) -->
+        <div class="w-full md:w-1/2 p-4 group relative">
+          <img src="img/hooker-valley-track-with-view-mount-cook-new-zealand_181624-16247.jpg" alt="Lone Tree"
+            class="w-full h-auto rounded-lg transition duration-300 group-hover:opacity-0">
+          <div
+            class="absolute inset-0 bg-cover bg-center rounded-lg transition duration-300 opacity-0 group-hover:opacity-100"
+            style="background-image: url('img/couple-traveling-together-country-side_23-2149406523.jpg');"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <br><br><br><br>
+
+
+
+  <!-- A Success Story -->
+  <section>
+
+    <div>
+      <h1
+        class="text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500">
+        "The Great Himalayan Trek: A Success Story by Wonder Way"
+
+      </h1>
+      <br><br><br>
+      <div class="w-screen h-[200px] flex items-center justify-center ">
+        <img src="img/29cd514f-75c9-4027-9cb7-5baf956affee_Feature-Image.jpg" alt="Centered Image"
+          class="w-full max-w-4xl h-40 object-cover rounded-md shadow-md">
+      </div>
+
+      <!-- Container -->
+      <div class="container mx-auto flex flex-col md:flex-row items-start space-y-6 md:space-y-0">
+
+        <!-- Left Text Section -->
+        <div class="w-full md:w-1/2 p-4">
+          <p class="text-white text-lg leading-relaxed">
+            At Wonder Way, we believe in crafting unforgettable travel experiences, and our latest group trek to the
+            majestic peaks of Uttarakhand was no exception. Led by our expert trek leader, Aarav Sharma, and a dedicated
+            team of five guides, this 7-day adventure took 25 enthusiastic participants through some of the most
+            breathtaking landscapes of the Himalayas. The trek began from the serene village of Joshimath, weaving
+            through lush green valleys, cascading waterfalls, and snow-covered trails leading to the stunning Kuari
+            Pass. Our team ensured every detail was meticulously planned—from setting up camps to providing fresh
+            meals—allowing our trekkers to focus solely on the beauty and thrill of the journey.
+          </p>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="w-full md:w-1/2 p-4">
+          <div class="grid grid-cols-1 gap-4">
+
+            <div class="flex justify-around gap-4 items-center">
+              <!-- Image 1 -->
+              <div class="relative overflow-hidden rounded-md shadow-md ">
+                <img src="img/hima 0001.jpg" alt="Image 1"
+                  class="w-full h-40 object-cover  transition-transform duration-300 hover:scale-105 ">
+              </div>
+
+              <!-- Image 2 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0002.avif" alt="Image 2"
+                  class="w-full h-40 object-cover  transition-transform duration-300 hover:scale-105">
+              </div>
+
+              <!-- Image 3 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 005.jpg" alt="Image 1"
+                  class="w-full h-40 object-cover  transition-transform duration-300 hover:scale-105">
+              </div>
+
+            </div>
+
+
+            <div class="flex justify-around gap-4 items-center">
+              <!-- Image 3 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0003.jpg" alt="Image 3"
+                  class="w-full h-40 object-cover  transition-transform duration-300 hover:scale-105 ">
+              </div>
+
+              <!-- Image 4 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0007.avif" alt="Image 4"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105  ">
+              </div>
+
+              <!-- Image 5 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0008.jpg" alt="Image 1"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105 ">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Container -->
+      <div class="container mx-auto flex flex-col md:flex-row items-start space-y-6 md:space-y-0">
+
+        <!-- Left Image Section -->
+        <div class="w-full md:w-1/2 p-4">
+          <div class="grid grid-cols-1 gap-4">
+
+            <!-- First Row of Images -->
+            <div class="flex justify-around gap-4 items-center">
+              <!-- Image 1 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0009.jpg" alt="Image 1"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105 ">
+              </div>
+
+              <!-- Image 2 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0006.jpg" alt="Image 2"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105 ">
+              </div>
+
+            </div>
+
+            <!-- Second Row of Images -->
+            <div class="flex justify-around gap-4 items-center">
+              <!-- Image 3 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0011.jpg" alt="Image 3"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105 ">
+              </div>
+
+              <!-- Image 4 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0012.jpg" alt="Image 4"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105 ">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Text Section -->
+        <div class="w-full md:w-1/2 p-4">
+          <p class="text-white text-lg leading-relaxed">
+            The real challenge came on the fourth day when heavy snowfall made the ascent to Kuari Pass difficult. This
+            was when teamwork and preparation truly shone. Under Aarav’s leadership, the group maintained their morale,
+            and with careful coordination and safety measures, everyone reached the summit together. The panoramic view
+            from the top—an endless expanse of snow-covered peaks including Nanda Devi and Dronagiri—was a sight that
+            left everyone speechless. The spirit of camaraderie, the shared struggles, and the collective triumph made
+            this trek unforgettable for all.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Container -->
+      <div class="container mx-auto flex flex-col md:flex-row items-start space-y-6 md:space-y-0">
+
+        <!-- Left Text Section -->
+        <div class="w-full md:w-1/2 p-4">
+          <p class="text-white text-lg leading-relaxed">
+            Here’s what one of the participants, Mr. Rajiv Deshmukh, had to say about the experience:
+            "I’ve been on many trips, but this one by Wonder Way was a class apart. The team’s professionalism and
+            passion were evident at every step. Aarav and his team made sure we felt safe, comfortable, and motivated
+            throughout the trek. Reaching Kuari Pass was a dream come true for me, and I couldn’t have done it without
+            Wonder Way’s support. I’m already looking forward to my next adventure with them!"
+
+            Ready to conquer your own mountains? Wonder Way is here to guide you every step of the way!
+          </p>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="w-full md:w-1/2 p-4">
+          <div class="grid grid-cols-1 gap-4">
+
+            <div class="flex justify-around gap-4 items-center">
+              <!-- Image 1 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0014.jpg" alt="Image 1"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105  ">
+              </div>
+
+              <!-- Image 2 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0013.jpg" alt="Image 2"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105 ">
+              </div>
+
+              <!-- Image 3 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0015.jpg" alt="Image 1"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105  ">
+              </div>
+
+            </div>
+            <br>
+
+            <div class="flex justify-around gap-4 items-center">
+              <!-- Image 3 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 112.avif" alt="Image 3"
+                  class="w-full h-40 object-cover  transition-transform duration-300 hover:scale-105 ">
+              </div>
+
+              <!-- Image 4 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0016.jpg" alt="Image 4"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+              </div>
+
+              <!-- Image 5 -->
+              <div class="relative rounded-md shadow-md">
+                <img src="img/hima 0020.jpg" alt="Image 1"
+                  class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- "WanderMart" -->
+  <section>
+    <br><br><br><br>
+
+    <div>
+      <h1
+        class="text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500">
+        "WanderMart" <br> "Travel Light, Shop Right—Adventure Awaits!"
+
+      </h1>
+    </div>
+
+    <br><br>
+    <section class="px-4 py-8">
+      <div class="flex items-center justify-center gap-5 ">
+        <h1
+          class="text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500">
+          Categories
+        </h1>
+
+        <button
+          class="px-6 py-3 text-white text-lg font-semibold rounded-full border-2 bg-sky-500 hover:bg-sky-700 hover:scale-110 transform transition duration-300 ease-in-out">
+          More
+        </button>
+      </div>
+
+      <br><br><br><br>
+
+
+      <div class="container mx-auto">
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <!-- Single Div with Image and Text -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover   1 image -->
+              <img src="img/climbing-gear-equipment-background_670382-232435.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Adventure Gear</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 2 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/travel-items-accessories-table_231794-1932.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Travel Essentials</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 3 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/table-with-variety-items-including-bread-fan-fan_1261053-8988.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Camping Equipment</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 4 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Backpacks & Luggage</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 5 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/collection-essential-adventure-tools_265721-4484.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Outdoor Apparel</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 6 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/mud-caked-leather-hiking-boots-trek-through-nature-generated-by-ai_188544-11759.avif" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Hiking Shoes & Boots</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 7 images -->
+          <a href="#" class="group">
+            <div
+              class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/sport-quipment-mat-dumbells-protein-shaker-fitness-gym-blue-background_842983-5615.avif" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Fitness & Wellness</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 8 images -->
+          <a href="#" class="group">
+            <div
+              class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/directly-shot-cameras-lenses-table_1048944-28342350.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Photography Gear</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 9 images -->
+          <a href="#" class="group">
+            <div
+              class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/Reisetools_Powerbank.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Tech & Gadgets</span>
+              </div>
+            </div>
+          </a>
+
+
+          <!-- 10 images -->
+          <a href="#" class="group">
+            <div
+              class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/front-view-autumn-travel-arrangement_23-2148634159.avif" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Travel Accessories</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 11 images -->
+          <a href="#" class="group">
+            <div
+              class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/ecofriendly-essentials-reusable-bags-bamboo-utensils-solar-panels_1274913-9323.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Eco-Friendly Products</span>
+              </div>
+            </div>
+          </a>
+
+          <!--  12 images -->
+          <a href="#" class="group">
+            <div
+              class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300 hidden md:block">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/top-view-red-present-box-with-brown-paper-card-coral-color-rose-flower-petals-with-purple-ribbon-heart-shaped-box-filled-with-marshmallow-dark-red-table_141793-8803.avif" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:rounded-full transition-all duration-300">
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium">Souvenirs & Gifts </span>
+              </div>
+            </div>
+          </a>
+
+
+
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+
+
+
+
+  <!-- Best Seller Alert -->
+  <section class=" py-12">
+    <div>
+      <h1
+        class="text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500">
+        "Best Seller Alert – Grab Yours Before It’s Gone!"
+
+      </h1>
+    </div>
+    <br><br><br>
+    <!-- Product Cards Container -->
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+      <!-- Product Card 1 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden  hover:scale-105 transform transition-all duration-300 ease-in-out bg-gradient-to-r from-red-700 via-orange-500 to-amber-500">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product Card 2 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300 ease-in-out bg-gradient-to-r from-pink-500 via-violet-500 to-indigo-500">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product Card 3 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300 ease-in-out bg-gradient-to-r from-lime-500 via-emerald-500 to-cyan-500
+          ">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product Card 4 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden  hover:scale-105 transform transition-all duration-300 ease-in-out bg-gradient-to-r from-amber-500 via-red-500 to-rose-500
+          ">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product Card 5 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden  hover:scale-105 transform transition-all duration-300 ease-in-out bg-gradient-to-r from-red-700 via-orange-500 to-amber-500
+
+          ">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Borrow  -->
+  <section class=" py-12">
+    <div>
+      <h1
+        class="text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500">
+        "Explore More, Spend Less—Borrow with Ease!"
+
+      </h1>
+    </div>
+    <br><br><br>
+    <!-- Product Cards Container -->
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+      <!-- Product Card 1 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden  hover:scale-105 transform transition-all duration-300 ease-in-out  bg-gradient-to-r from-purple-500 to-pink-500">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product Card 2 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden  hover:scale-105 transform transition-all duration-300 ease-in-out bg-gradient-to-r from-violet-500 to-fuchsia-500">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product Card 3 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden  hover:scale-105 transform transition-all duration-300 ease-in-out  bg-gradient-to-r from-sky-500 to-indigo-500">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product Card 4 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden  hover:scale-105 transform transition-all duration-300 ease-in-out  bg-gradient-to-r from-cyan-500 to-blue-500">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product Card 5 -->
+      <a href="">
+        <div
+          class="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden  hover:scale-105 transform transition-all duration-300 ease-in-out  bg-gradient-to-r from-purple-700 via-indigo-700 to-black">
+          <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Product Image"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-white">Product Name</h2>
+            <p class="text-gray-300 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-xl font-bold text-white mt-4">$29.99</p>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">
+                shop now </button>
+              <button
+                class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-lg hover:bg-blue-700 transition-all duration-200">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Real Stories -->
+  <section class="py-8">
+    <div>
+      <h1
+        class="text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500">
+        "Real Stories from Real Explorers"
+      </h1>
+    </div>
+
+    <br><br>
+
+    <!-- Grid Container for the Cards -->
+    <div class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div
+        class="flex flex-col items-center bg-[#777076] shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-all duration-300">
+        <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Mountain Climbing"
+          class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <p class="text-sm text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores ipsam totam id, voluptatum neque
+            commodi excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad corporis cum amet ut
+            dicta cumque quidem nobis vel modi quibusdam sed officia qui quae quo tempora rerum, omnis alias?
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="flex flex-col items-center bg-[#777076] shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-all duration-300">
+        <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Mountain Climbing"
+          class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <p class="text-sm text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores ipsam totam id, voluptatum neque
+            commodi excepturi.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hidden on small screens, visible from 'md' size upwards -->
+      <div
+        class="flex flex-col items-center bg-[#777076] shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 md:block ">
+        <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Mountain Climbing"
+          class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <p class="text-sm text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores ipsam totam id, voluptatum neque
+            commodi excepturi.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hidden on small screens, visible from 'md' size upwards -->
+      <div
+        class="flex flex-col items-center bg-[#777076] shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 md:block ">
+        <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Mountain Climbing"
+          class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <p class="text-sm text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores ipsam totam id, voluptatum neque
+            commodi excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nesciunt,
+            necessitatibus nulla, aliquam explicabo inventore deleniti neque consequatur quia voluptas ut cumque, esse
+            enim quos suscipit perspiciatis tempore omnis eos.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col items-center bg-[#777076] shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 md:block ">
+        <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Mountain Climbing"
+          class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <p class="text-sm text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores ipsam totam id, voluptatum neque
+            commodi excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nesciunt,
+            necessitatibus nulla, aliquam explicabo inventore deleniti neque consequatur quia voluptas ut cumque, esse
+            enim quos suscipit perspiciatis tempore omnis eos.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col items-center bg-[#777076] shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 md:block ">
+        <img src="img/climbing-equipment-set-against-stunning-mountain-vista.jpg" alt="Mountain Climbing"
+          class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <p class="text-sm text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores ipsam totam id, voluptatum neque
+            commodi excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nesciunt,
+            necessitatibus nulla, aliquam explicabo inventore deleniti neque consequatur quia voluptas ut cumque, esse
+            enim quos suscipit perspiciatis tempore omnis eos.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="flex justify-center gap-4 mt-4">
+      <button
+        class="bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+        Write Review
+      </button>
+      <button
+        class="bg-gray-600 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+        Read More
+      </button>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- footer -->
+
+  <footer
+    style="background-image: url(img/suitcase-with-hat-sunglasses-black-background-travel-concept-with-copy-space-individual-text_157125-15654.jpg); background-position:center ;  background-size: cover;">
+
+    <section class="  py-10 h-[80vh]  w-[100vw] ">
+      <!-- Company Section -->
+      <div>
+        <h1
+          class="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500 ">
+          -- WANDER WAY --
+        </h1>
+      </div>
+      <br><br>
+
+      <!-- Footer Links -->
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-0">
+        <!-- Column 1 -->
+        <div>
+          <h1
+            class="text-2xl font-semibold mb-4  text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-red-500 to-rose-500">
+            Company</h1>
+          <ul class="space-y-2 text-cyan-400 text-xl">
+            <li><a href="#" class="hover:text-cyan-400">Blog</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-cyan-400">FAQs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <h1
+            class="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500 ">
+            Explore</h1>
+          <ul class="space-y-2 text-cyan-400 text-xl">
+            <li><a href="#" class="hover:text-cyan-400">Destinations</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Offers</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Guides</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h1
+            class="text-2xl font-semibold mb-4  text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500">
+            Quick Links</h1>
+          <ul class="space-y-2 text-cyan-400 text-xl">
+            <li><a href="#" class="hover:text-cyan-400">About Us</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Careers</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="mt-12">
+        <h1 class="text-center text-2xl font-semibold text-cyan-400">Follow Us</h1>
+        <div class="flex justify-center space-x-6 mt-6">
+          <a href="#" class="text-white text-2xl  ">
+            <img class=" h-10 w-10 " src="img/facebook (1).png" alt="">
+          </a>
+          <a href="#" class="text-white text-2xl hover:text-cyan-400">
+            <img class="h-10 w-10" src="img/facebook (1).png" alt="">
+          </a>
+          <a href="#" class="text-white text-2xl hover:text-cyan-400">
+            <img class="h-10 w-10" src="img/facebook (1).png" alt="">
+          </a>
+          <a href="#" class="text-white text-2xl hover:text-cyan-400">
+            <img class="h-10 w-10" src="img/facebook (1).png" alt="">
+          </a>
+          <a href="#" class="text-white text-2xl hover:text-cyan-400">
+            <img class="h-10 w-10" src="img/facebook (1).png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="mt-12 text-center text-gray-400 text-sm">
+        © 2025 Wander Way. All Rights Reserved.
+      </div>
+    </section>
+  </footer>
+
+
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

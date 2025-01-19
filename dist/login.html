@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Initial State: Hide Modal */
+    #loginModal {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-indigo-500  to-purple-600 ">
+
+  <!-- Login Button -->
+  <button id="loginBtn" class="px-6 py-3 text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+    Login
+  </button>
+
+  <!-- Modal -->
+  <div id="loginModal" class="fixed inset-0 flex items-center justify-center z-50 bg-gray-800 bg-opacity-50">
+
+    <!-- Modal Content -->
+    <div class="bg-white w-96 p-6 rounded-lg shadow-lg">
+
+      <!-- Step 1: Gmail/Mobile + OTP Form -->
+      <div id="step1" class="space-y-4">
+        <h2 class="text-2xl font-bold text-gray-700 mb-4">Login</h2>
+
+        <div>
+          <label for="emailOrPhone" class="block text-sm font-medium text-gray-700">Gmail or Mobile Number</label>
+          <input type="text" id="emailOrPhone" placeholder="Enter your email or mobile"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+        </div>
+        
+        <div>
+          <label for="otp" class="block text-sm font-medium text-gray-700">OTP</label>
+          <input type="text" id="otp" placeholder="Enter OTP"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+        </div>
+
+        <button id="nextButton" class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">
+          Next
+        </button>
+      </div>
+
+      <!-- Step 2: Username & Password Form (Initially Hidden) -->
+      <div id="step2" class="space-y-4 hidden">
+        <h2 class="text-2xl font-bold text-gray-700 mb-4">Enter Credentials</h2>
+
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+          <input type="text" id="username" placeholder="Enter your username"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" placeholder="Enter your password"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+        </div>
+
+        <button id="loginButton" class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">
+          Login
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Open the login modal when the Login button is clicked
+    document.getElementById("loginBtn").addEventListener("click", function() {
+      document.getElementById("loginModal").style.display = "flex"; // Show modal
+    });
+
+    // Next Button (Switches to Step 2: Username and Password)
+    document.getElementById("nextButton").addEventListener("click", function() {
+      // Hide Step 1 and show Step 2
+      document.getElementById("step1").style.display = "none";
+      document.getElementById("step2").style.display = "block";
+    });
+
+    // Login Button (Handle login submission)
+    document.getElementById("loginButton").addEventListener("click", function() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // In a real scenario, send data to backend for validation here
+
+      alert("Logged in successfully! Username: " + username + " Password: " + password);
+
+      // Close the modal after successful login
+      document.getElementById("loginModal").style.display = "none";
+    });
+  </script>
+
+</body>
+</html>
