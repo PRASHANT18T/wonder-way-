@@ -3,98 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Modal</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Initial State: Hide Modal */
-    #loginModal {
-      display: none;
-    }
-  </style>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-<body class="bg-gradient-to-r from-indigo-500  to-purple-600 ">
-
-  <!-- Login Button -->
-  <button id="loginBtn" class="px-6 py-3 text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
-    Login
-  </button>
-
-  <!-- Modal -->
-  <div id="loginModal" class="fixed inset-0 flex items-center justify-center z-50 bg-gray-800 bg-opacity-50">
-
-    <!-- Modal Content -->
-    <div class="bg-white w-96 p-6 rounded-lg shadow-lg">
-
-      <!-- Step 1: Gmail/Mobile + OTP Form -->
-      <div id="step1" class="space-y-4">
-        <h2 class="text-2xl font-bold text-gray-700 mb-4">Login</h2>
-
-        <div>
-          <label for="emailOrPhone" class="block text-sm font-medium text-gray-700">Gmail or Mobile Number</label>
-          <input type="text" id="emailOrPhone" placeholder="Enter your email or mobile"
-            class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-        </div>
-        
-        <div>
-          <label for="otp" class="block text-sm font-medium text-gray-700">OTP</label>
-          <input type="text" id="otp" placeholder="Enter OTP"
-            class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-        </div>
-
-        <button id="nextButton" class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">
-          Next
-        </button>
+<body class="bg-gray-600 min-h-screen flex items-center justify-center">
+  <div class="bg-white/35 shadow-md rounded-lg p-6 w-full max-w-md">
+    <!-- Step 1 -->
+    <div id="step1" class="step">
+      <h2 class="text-2xl font-semibold text-center mb-4">Login</h2>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700">Gmail</label>
+        <input id="email" type="email" placeholder="Enter your Gmail"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
       </div>
-
-      <!-- Step 2: Username & Password Form (Initially Hidden) -->
-      <div id="step2" class="space-y-4 hidden">
-        <h2 class="text-2xl font-bold text-gray-700 mb-4">Enter Credentials</h2>
-
-        <div>
-          <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
-          <input type="text" id="username" placeholder="Enter your username"
-            class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-        </div>
-
-        <div>
-          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-          <input type="password" id="password" placeholder="Enter your password"
-            class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-        </div>
-
-        <button id="loginButton" class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300">
-          Login
-        </button>
+      <div class="mb-4">
+        <label for="otp" class="block text-sm font-medium text-gray-700">OTP</label>
+        <input id="otp" type="number" placeholder="Enter OTP"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
       </div>
+      <button id="nextBtn1"
+        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md">
+        Next
+      </button>
+    </div>
+
+    <!-- Step 2 -->
+    <div id="step2" class="step hidden">
+      <h2 class="text-2xl font-semibold text-center mb-4">Personal Details</h2>
+      <div class="mb-4">
+        <label for="firstName" class="block text-sm font-medium text-gray-700">First Name</label>
+        <input id="firstName" type="text" placeholder="Enter your first name"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <div class="mb-4">
+        <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name</label>
+        <input id="lastName" type="text" placeholder="Enter your last name"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <div class="mb-4">
+        <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number</label>
+        <input id="mobile" type="tel" placeholder="Enter your mobile number"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <div class="mb-4">
+        <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+        <input id="dob" type="date"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <div class="mb-4">
+        <label for="gender" class="block text-sm font-medium text-gray-700">Gender</label>
+        <select id="gender" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2">
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button id="submitbtt"
+        class="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-md">
+        Submit
+      </button>
     </div>
   </div>
 
   <script>
-    // Open the login modal when the Login button is clicked
-    document.getElementById("loginBtn").addEventListener("click", function() {
-      document.getElementById("loginModal").style.display = "flex"; // Show modal
+    const step1 = document.getElementById("step1");
+    const step2 = document.getElementById("step2");
+    const nextBtn1 = document.getElementById("nextBtn1");
+    const submitbtt = document.getElementById("submitbtt");
+    const profile = document.getElementById("profile");
+    const loginBtn = document.getElementById("loginBtn");
+
+
+    submitbtt.addEventListener("click", () => {
+      window.location.href ="index.html";
     });
 
-    // Next Button (Switches to Step 2: Username and Password)
-    document.getElementById("nextButton").addEventListener("click", function() {
-      // Hide Step 1 and show Step 2
-      document.getElementById("step1").style.display = "none";
-      document.getElementById("step2").style.display = "block";
+    submitbtt.addEventListener("click", () => {
+      ;
     });
 
-    // Login Button (Handle login submission)
-    document.getElementById("loginButton").addEventListener("click", function() {
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
 
-      // In a real scenario, send data to backend for validation here
 
-      alert("Logged in successfully! Username: " + username + " Password: " + password);
-
-      // Close the modal after successful login
-      document.getElementById("loginModal").style.display = "none";
+    nextBtn1.addEventListener("click", () => {
+      step1.classList.add("hidden");
+      step2.classList.remove("hidden");
     });
+
+    
+  
+
+ 
+
+
   </script>
-
 </body>
 </html>

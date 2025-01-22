@@ -41,6 +41,9 @@ showItem(currentIndex);
 
 
 
+const readButGodafoss = document.getElementById("readButGodafoss");
 
-
+readButGodafoss.addEventListener("click", () => {
+  window.location.href = "godafoss-waterfall.html";
+});
 
