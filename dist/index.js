@@ -47,3 +47,46 @@ readButGodafoss.addEventListener("click", () => {
   window.location.href = "godafoss-waterfall.html";
 });
 
+const bookNowGodafoss = document.getElementById("bookNowGodafoss");
+
+bookNowGodafoss.addEventListener("click", () => {
+  window.location.href = "booknowwaterfall.html";
+});
+
+
+
+
+
+
+
+// Keyword-to-page mapping
+const keywordToPage = {
+  waterfall: "godafoss-waterfall.html", // Redirects to Godafoss Waterfall page
+};
+
+// Get input and button elements
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+
+// Search function
+function handleSearch() {
+  const query = searchInput.value.toLowerCase().trim();
+
+  if (keywordToPage[query]) {
+    // Redirect to the mapped page
+    window.location.href = keywordToPage[query];
+  } else {
+    // Show an alert if the keyword doesn't match
+    alert("No matching page found for your search. Try 'waterfall'!");
+  }
+}
+
+// Add click event listener to the button
+searchButton.addEventListener("click", handleSearch);
+
+// Add Enter key listener to the input
+searchInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    handleSearch();
+  }
+});

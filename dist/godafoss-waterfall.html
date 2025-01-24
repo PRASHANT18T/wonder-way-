@@ -8,13 +8,31 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="p-0 m-0 bg-[#002233] text-white">
+<body   class="p-0 m-0 bg-[#002233] text-white">
 
     <section>
+
+
         <!-- First Section (Image Background) with Overlayed Header and Navigation -->
         <div class="relative">
             <img class="h-[100vh] w-screen object-cover"
                 src="img/godafoss-waterfall-sunset-winter-iceland-guy-red-jacket-looks-godafoss-waterfall.jpg" alt="">
+
+                <div class="absolute top-[20%]  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20">
+                    <p class="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-blue-700 via-purple-800 to-pink-700">
+                        "Gullfoss Waterfall: A Majestic Icelandic Wonder"
+                        <br><br>
+                        <span class="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-blue-700 via-purple-800 to-pink-700">"Where Nature Roars and Rainbows Bloom"</span>
+                    </p>
+                    <br><br>
+                    <div id="textani  "
+                    class=" gap-[5px]    ">
+                    
+                    <button id="bookNow2" class="font-bold text-2xl text-black transition duration-[5000] hover:text-red-500">
+                      book now
+                    </button>
+                </div>
+            </div>
 
             <!-- Navigation Bar -->
             <header class="absolute top-0 left-0 w-full z-10 p-4 text-white">
@@ -25,7 +43,7 @@
 
                     <div class="flex items-center">
                         <input type="text" placeholder="Search..."
-                            class="px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-400 text-black" />
+                            class="px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-400 text-black bg-white/50" />
                         <button class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600">Search</button>
                     </div>
 
@@ -52,85 +70,75 @@
                         <a href="#" id="profile" class="hidden">profile</a>
                     </div>
                 </nav>
+
+
+                
             </header>
 
             <!-- Text Content Overlaid on Image -->
-            <div class="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20">
-                <p class="text-5xl text-white">
-                    "Gullfoss Waterfall: A Majestic Icelandic Wonder"
-                    <br>
-                    <span class="text-3xl text-white">"Where Nature Roars and Rainbows Bloom"</span>
-                </p>
-            </div>
-        </div>
+           
 
         <!-- Second Section (Content) -->
-        <section class="p-5 bg-[#001f29]">
-            <p class="font-bold text-xl">
-                Gullfoss, one of Iceland's most famous waterfalls, is located in the southwest of the country, part of
-                the Golden Circle route. The waterfall, whose name translates to "Golden Falls" in Icelandic, is found
-                in the Hvítá river, which originates from the Langjökull glacier. The river's waters cascade down two
-                stages into a deep canyon, creating an impressive and powerful sight that attracts visitors from around
-                the world. With a height of 32 meters and a width of 70 meters, Gullfoss is truly a natural wonder of
-                Iceland.
-                <br><br>
-
-                The falls are unique in that they take a dramatic two-step plunge—first, the water drops 11 meters and
-                then 21 meters into the canyon below. This creates a mesmerizing visual effect, especially on sunny
-                days, when the mist rising from the falls often forms rainbows, adding to the beauty of the scene. The
-                falls are surrounded by rough, rocky terrain, making the viewpoint a thrilling location for tourists to
-                stand and admire the power of nature.
-                <br><br>
-                Gullfoss also has an important place in Icelandic history. In the early 20th century, there were plans
-                to harness the falls for hydroelectric power, but this idea was fiercely opposed by Icelanders, notably
-                by Sigríður Tómasdóttir, the daughter of a local farmer. Her determined efforts to save the waterfall
-                from being dammed helped protect the falls as a national treasure. Today, Gullfoss remains a protected
-                natural site, and visitors can explore the surrounding area, including walking paths and viewing
-                platforms, making it a must-see destination for nature lovers and adventurers in Iceland.
+        <section class="p-5 bg-gray-900 text-gray-200">
+            <p class="text-lg md:text-xl lg:text-2xl leading-relaxed md:leading-loose">
+                <span class="font-bold text-yellow-500">Gullfoss</span>, one of Iceland's most famous waterfalls, is located in the southwest of the country, part of the Golden Circle route. The waterfall, whose name translates to 
+                <span class="italic text-yellow-400">"Golden Falls"</span> in Icelandic, is found in the Hvítá river, which originates from the Langjökull glacier. The river's waters cascade down two stages into a deep canyon, creating an impressive and powerful sight that attracts visitors from around the world. With a height of 
+                <span class="text-blue-400 font-semibold">32 meters</span> and a width of <span class="text-blue-400 font-semibold">70 meters</span>, Gullfoss is truly a natural wonder of Iceland.
+            </p>
+            <br>
+            <p class="text-lg md:text-xl lg:text-2xl leading-relaxed md:leading-loose">
+                The falls are unique in that they take a dramatic two-step plunge—first, the water drops <span class="font-bold text-pink-400">11 meters</span> and then <span class="font-bold text-pink-400">21 meters</span> into the canyon below. This creates a mesmerizing visual effect, especially on sunny days, when the mist rising from the falls often forms <span class="text-green-400 font-semibold">rainbows</span>, adding to the beauty of the scene. The falls are surrounded by rough, rocky terrain, making the viewpoint a thrilling location for tourists to stand and admire the power of nature.
+            </p>
+            <br>
+            <p class="text-lg md:text-xl lg:text-2xl leading-relaxed md:leading-loose">
+                Gullfoss also has an important place in Icelandic history. In the early 20th century, there were plans to harness the falls for hydroelectric power, but this idea was fiercely opposed by Icelanders, notably by 
+                <span class="text-purple-400 font-bold">Sigríður Tómasdóttir</span>, the daughter of a local farmer. Her determined efforts to save the waterfall from being dammed helped protect the falls as a national treasure. Today, Gullfoss remains a protected natural site, and visitors can explore the surrounding area, including walking paths and viewing platforms, making it a must-see destination for nature lovers and adventurers in Iceland.
             </p>
         </section>
+        
 
         <!-- Third Section (Placeholder) -->
         <section class="p-5">
-            <div>
-                <p class="text-center  text-4xl">"Capturing Moments, Creating Memories – Beauty in Every Frame"
-
+            <div class="p-5">
+                <p class="text-center text-2xl md:text-4xl lg:text-5xl font-semibold leading-snug md:leading-tight lg:leading-snug text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+                    "Capturing Moments, Creating Memories – Beauty in Every Frame"
                 </p>
             </div>
+            
             <br><br><br>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 ">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6  gap-4">
                 <div class="h-40 w-40">
-                    <img class="h-full w-full object-cover"
+                    <img class="h-full w-full object-cover rounded-2xl"
                         src="img/beautiful-landscape-beach-sea-ocean-with-empty-chair-deck-umbrella-nearly-coconut-palm-tree-with-white-cloud-blue-sky_74190-9981.avif"
                         alt="">
                 </div>
 
                 <div class="h-40 w-40">
-                    <img class="h-full w-full object-cover"
+                    <img class="h-full w-full object-cover rounded-2xl"
                         src="img/beautiful-landscape-beach-sea-ocean-with-empty-chair-deck-umbrella-nearly-coconut-palm-tree-with-white-cloud-blue-sky_74190-9981.avif"
                         alt="">
                 </div>
 
                 <div class="h-40 w-40">
-                    <img class="h-full w-full object-cover"
+                    <img class="h-full w-full object-cover rounded-2xl"
                         src="img/beautiful-landscape-beach-sea-ocean-with-empty-chair-deck-umbrella-nearly-coconut-palm-tree-with-white-cloud-blue-sky_74190-9981.avif"
                         alt="">
                 </div>
 
                 <div class="h-40 w-40">
-                    <img class="h-full w-full object-cover"
+                    <img class="h-full w-full object-cover rounded-2xl"
                         src="img/beautiful-landscape-beach-sea-ocean-with-empty-chair-deck-umbrella-nearly-coconut-palm-tree-with-white-cloud-blue-sky_74190-9981.avif"
                         alt="">
                 </div>
 
                 <div class="h-40 w-40">
-                    <img class="h-full w-full object-cover"
+                    <img class="h-full w-full object-cover rounded-2xl"
                         src="img/beautiful-landscape-beach-sea-ocean-with-empty-chair-deck-umbrella-nearly-coconut-palm-tree-with-white-cloud-blue-sky_74190-9981.avif"
                         alt="">
                 </div>
 
                 <div class="h-40 w-40">
-                    <img class="h-full w-full object-cover"
+                    <img class="h-full w-full object-cover rounded-2xl"
                         src="img/beautiful-landscape-beach-sea-ocean-with-empty-chair-deck-umbrella-nearly-coconut-palm-tree-with-white-cloud-blue-sky_74190-9981.avif"
                         alt="">
                 </div>
@@ -141,105 +149,99 @@
     </section>
 
 <br><br><br><br>
-    <section>
+<section>
+    <div class="text-center text-4xl">
+        <p>
+            "Gullfoss: Where Beauty Meets Power."
+        </p>
+    </div>
+    <br><br>
 
+    <div class="  grid grid-cols-3  md:grid-cols-2  gap-4 p-5">
 
-        <div class="text-center text-4xl">
-            <p>
-                "Gullfoss: Where Beauty Meets Power."
-            </p>
-        </div>
-<br><br>
-        <div class=" ">
-
-            <div class="h-50 w-full bg-white rounded-lg   flex items-center  ">
-
-                <div class="h-40 w-50 rounded-lg    ">
-                    <img class="h-full w-full rounded-md  " src="img/OIP (8).jpg" alt="">
-                </div>
-                <div>
-                    <p class="text-red-700 ">
-                        Madhur ji ,INDIA : 
-                        
-                        "Gullfoss is absolutely breathtaking! The power and beauty of the cascading water are unforgettable. A must-visit for nature lovers."
-                       
-                    </p>
-                </div>
-
+        <!-- First Item -->
+        <div class="max-h-max max-w-md bg-white/20 rounded-lg flex flex-col md:flex-row items-center gap-4 p-4  hover:scale-110">
+            <div class="h-40 w-40 md:w-1/1 rounded-lg">
+                <img class="h-full w-full rounded-md" src="img/OIP (8).jpg" alt="Gullfoss Image">
             </div>
-<br><br>
-            <div class="h-50 w-full bg-white rounded-lg   flex  items-center gap-3">
-
-                <div class="h-40 w-50 rounded-lg    ">
-                    <img class="h-full w-full rounded-md  " src="img/download (9).jpg" alt="">
-                </div>
-                <div>
-                    <p class="text-red-700">
-                        Emma Stone ,America: "Standing by Gullfoss felt like being part of a magical painting. The mist and roaring sound were mesmerizing!"
-                    </p>
-                </div>
-
+            <div class="md:w-1/1 text-center md:text-left">
+                <p class="text-white">
+                    Madhur ji, INDIA: "Gullfoss is absolutely breathtaking! The power and beauty of the cascading water are unforgettable. A must-visit for nature lovers." 
+                    <10></10>
+                </p>
             </div>
-            <br><br>
-            <div class="h-50 w-full bg-white rounded-lg   flex  items-center  gap-3">
-
-                <div class="h-40 w-50 rounded-lg    ">
-                    <img class="h-full w-full rounded-md  " src="img/OIP (10).jpg" alt="">
-                </div>
-                <div>
-                    <p class="text-red-700">
-                        Sophia, Australia: "I’ve seen many waterfalls, but Gullfoss is in a league of its own. Its raw beauty is a gift of nature!"
-                    </p>
-                </div>
-
-            </div>
-            <br><br>
-            <div class="h-50 w-full bg-white rounded-lg   flex  items-center gap-3">
-
-                <div class="h-40 w-50 rounded-lg    ">
-                    <img class="h-full w-full rounded-md  " src="img/OIP (11).jpg" alt="">
-                </div>
-                <div>
-                    <p class="text-red-700">
-                        Liam, Canada: "Gullfoss stole my heart! The stunning double cascade and the surrounding scenery left me speechless."
-                    </p>
-                </div>
-
-            </div>
-            <br><br>
-            <div class="h-50 w-full bg-white rounded-lg   flex  items-center gap-3">
-
-                <div class="h-40 w-50 rounded-lg    ">
-                    <img class="h-full w-full rounded-md  " src="img/download (8).jpg" alt="">
-                </div>
-                <div>
-                    <p class="text-red-700">
-                        Carlos, Spain: "This Icelandic gem is an adventurer’s paradise. Gullfoss is the perfect blend of power and peace."
-                    </p>
-                </div>
-
-            </div>
-            <br><br>
-            <div class="h-50 w-full bg-white rounded-lg   flex  items-center gap-3">
-
-                <div class="h-40 w-50 rounded-lg    ">
-                    <img class="h-full w-full rounded-md  " src="img/OIP (9).jpg" alt="">
-                </div>
-                <div>
-                    <p class="text-red-700">
-                        Amara, India: "Gullfoss is a wonder of nature! The sheer energy and picturesque views make it a dream destination."
-                    </p>
-                </div>
-
-            </div>
-            
-
-
-
         </div>
 
-    </section>
+        <!-- Second Item -->
+        <div class="max-h-max max-w-md bg-white/20 rounded-lg flex flex-col md:flex-row items-center gap-4 p-4 hover:scale-110">
+            <div class="h-40 w-40 md:w-1/1 rounded-lg">
+                <img class="h-full w-full rounded-md" src="img/download (9).jpg" alt="Gullfoss Image">
+            </div>
+            <div class="md:w-1/1 text-center md:text-left">
+                <p class="text-white">
+                    Emma Stone, America: "Standing by Gullfoss felt like being part of a magical painting. The mist and roaring sound were mesmerizing!"
+                </p>
+            </div>
+        </div>
 
+        <!-- Third Item -->
+        <div class="max-h-max max-w-md bg-white/20 rounded-lg flex flex-col md:flex-row items-center gap-4 p-4 hover:scale-110">
+            <div class="h-40 w-40 md:w-1/1 rounded-lg">
+                <img class="h-full w-full rounded-md" src="img/OIP (10).jpg" alt="Gullfoss Image">
+            </div>
+            <div class="md:w-1/1 text-center md:text-left">
+                <p class="text-white">
+                    Sophia, Australia: "I’ve seen many waterfalls, but Gullfoss is in a league of its own. Its raw beauty is a gift of nature!"
+                </p>
+            </div>
+        </div>
+
+        <!-- Fourth Item -->
+        <div class="max-h-max max-w-md bg-white/20 rounded-lg flex flex-col md:flex-row items-center gap-4 p-4 hover:scale-110">
+            <div class="h-40 w-40 md:w-1/1 rounded-lg">
+                <img class="h-full w-full rounded-md" src="img/OIP (11).jpg" alt="Gullfoss Image">
+            </div>
+            <div class="md:w-1/1 text-center md:text-left">
+                <p class="text-white">
+                    Liam, Canada: "Gullfoss stole my heart! The stunning double cascade and the surrounding scenery left me speechless."
+                </p>
+            </div>
+        </div>
+
+        <!-- Fifth Item -->
+        <div class="max-h-max max-w-md bg-white/20 rounded-lg flex flex-col md:flex-row items-center gap-4 p-4 hover:scale-110">
+            <div class="h-40 w-40 md:w-1/1 rounded-lg">
+                <img class="h-full w-full rounded-md" src="img/download (8).jpg" alt="Gullfoss Image">
+            </div>
+            <div class="md:w-1/1 text-center md:text-left">
+                <p class="text-white">
+                    Carlos, Spain: "This Icelandic gem is an adventurer’s paradise. Gullfoss is the perfect blend of power and peace."
+                </p>
+            </div>
+        </div>
+
+        <!-- Sixth Item -->
+        <div class="max-h-max max-w-md bg-white/20 rounded-lg flex flex-col md:flex-row items-center gap-4 p-4 hover:scale-110">
+            <div class="h-40 w-40 md:w-1/1 rounded-lg">
+                <img class="h-full w-full rounded-md" src="img/OIP (9).jpg" alt="Gullfoss Image">
+            </div>
+            <div class="md:w-1/1 text-center md:text-left">
+                <p class="text-white">
+                    Amara, India: "Gullfoss is a wonder of nature! The sheer energy and picturesque views make it a dream destination."
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+const bookNow2 = document.getElementById("bookNow2");
+
+bookNow2.addEventListener ( "click" , () => {
+   window.location.href = "booknowwaterfall.html"
+} );
+
+</script>
 </body>
 
 </html>
