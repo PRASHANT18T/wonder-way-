@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="bg-gray-600 py-10  h-[100vh] " style="  background-image: url(img/close-up-bell-hanging-against-blue-background_1048944-14687006.avif);  background-size: cover;  ">
+        <div class="container mx-auto px-5">
+          <h2 class="text-4xl font-bold text-center mb-6">Contact Us</h2>
+          <p class="text-center text-white mb-8">We’d love to hear from you! Feel free to reach out to us for inquiries, feedback, or support.</p>
+      
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Form -->
+            <form class="bg-white/50 p-6 shadow-md rounded-lg">
+              <label for="name" class="block text-white font-medium mb-2">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full p-3 border rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      
+              <label for="email" class="block text-white font-medium mb-2">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full p-3 border rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      
+              <label for="message" class="block text-white font-medium mb-2">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Enter your message" class="w-full p-3 border rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      
+              <button id="submit" type="submit" class="bg-blue-500 text-white px-5 py-3 rounded-md hover:bg-blue-600">Send Message</button>
+            </form>
+      
+            <!-- Contact Information -->
+            <div class="bg-white/50 p-6 shadow-md rounded-lg">
+              <h3 class="text-2xl font-bold text-white mb-4">Get in Touch</h3>
+              <p class="text-gray-600 mb-4">
+                <strong>Email:</strong> wonderway@help.com<br>
+                <strong>Phone:</strong> +91 12345 67890<br>
+                <strong>Address:</strong> 123 panvel, new mumbai, india
+              </p>
+              <h4 class="text-xl font-bold text-white mb-2">Follow Us</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="text-blue-500 hover:text-blue-700"><img src="" alt=""></a>
+                <a href="#" class="text-blue-400 hover:text-blue-600"><img src="" alt=""></a>
+                <a href="#" class="text-pink-500 hover:text-pink-700"><img src="" alt=""></a>
+                <a href="#" class="text-red-500 hover:text-red-700"><img src="" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script>
+const submit = document.getElementById("submit");
+
+
+submit.addEventListener("click", () =>{
+    alert(' Message Submitted!')
+} );
+
+
+submit.addEventListener("click", () =>{
+  history.back();
+});
+
+      </script>
+</body>
+</html>

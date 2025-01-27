@@ -5,25 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tiips</title>
-    <link rel="stylesheet" href="trips.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="m-0 p-0 text-white bg-[#002233]">
+<body class="m-0 p-0 text-white bg-[#464646] ">
 
-    <section class="  relative h-screen w-screen   ">
-        <!-- Video Background -->
-        <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full  max-w-full object-cover">
-            <source src="img/5236593-hd_1920_1080_30fps.mp4" type="video/mp4">
-
-        </video>
-
+    <section class="relative h-[70vh] w-screen">
+        <!-- Background Image -->
+        <img src="img/full-shot-travel-concept-with-landmarks.jpg" alt="Background Image" class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+        
         <!-- Navbar -->
-        <nav class="flex items-center justify-between p-4 relative z-10 bg-black/50">
+        <nav class="absolute top-0 left-0 w-full flex items-center justify-between p-4 z-20 bg-black/50">
             <!-- Logo -->
             <div class="text-white font-bold text-xl">
                 <a href="#">Wonder Way</a>
             </div>
-
+    
             <!-- Search Bar -->
             <div class="flex items-center space-x-2">
                 <input type="text" placeholder="Search..."
@@ -32,204 +29,304 @@
                     Search
                 </button>
             </div>
-
+    
             <!-- Menu Button (visible on small screens) -->
-      <button id="menu-btn" class="md:hidden flex items-center text-white hover:text-blue-400 focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-
-      <!-- Menu Links (visible on medium and larger screens) -->
-      <div id="menu-links"
-        class="hidden flex-col space-y-4 md:flex md:flex-row md:space-x-6 md:space-y-0 md:items-center font-bold text-xl text-white">
-        <a href="index.html" class="hover:text-blue-200">Home</a>
-        <a href="trips.html" class="hover:text-blue-200">Trips</a>
-        <a href="#" class="hover:text-blue-200">Shop</a>
-        <a href="#" class="hover:text-blue-200">Contact</a>
-        <a href="#" class="hover:text-blue-200">Blog</a>
-        <a href="tripslogine.html" id="loginBtn" class="hover:text-blue-200">login</a>
-        
-      </div>
+            <button id="menu-btn" class="md:hidden flex items-center text-white hover:text-blue-400 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+    
+            <!-- Menu Links (visible on medium and larger screens) -->
+            <div id="menu-links"
+                class="hidden flex-col space-y-4 md:flex md:flex-row md:space-x-6 md:space-y-0 md:items-center font-bold text-xl text-white">
+                <a href="index.html" class="hover:text-blue-200">Home</a>
+               
+                <a href="shop.html" class="hover:text-blue-200">Shop</a>
+                <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                <a href="blogs.html" class="hover:text-blue-200">Blog</a>
+                <a href="login.html" id="loginBtn" class="hover:text-blue-200">Login</a>
+                <a href="" class="hover:text-blue-200">profile</a>
+            </div>
         </nav>
-
-ss
-        <div class=" absolute z-10  top-[50%] left-[50%]    transform -translate-x-1/2 -translate-y-1/2 text-center">
-
-            <p class="">
-            <p
-                class="  sm:text-2xl md:text-5xl   text-transparent bg-clip-text bg-gradient-to-r from-sky-900 via-indigo-900 to-purple-900">
-                "Welcome to Wonder Way"  <br></p>
-            <br>
-            <p
-                class="   md:text-2xl sm:text-xl  text-transparent bg-clip-text bg-gradient-to-r from-sky-900 via-indigo-900 to-purple-900">
-                "Wander More, Worry Less."</p>
-            </p>
-
+       
+        <!-- Centered Content -->
+        <div class="absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+            <!-- Backdrop Blur and Text -->
+            <div class="backdrop-blur-10 bg-white/30 rounded-lg p-6">
+                <p class="sm:text-2xl md:text-5xl font-bold text-black whitespace-nowrap">
+                    "Discover the Wonders of the World—Adventure Awaits!" 
+                </p>
+                <p class="md:text-3xl sm:text-xl text-black whitespace-nowrap">
+                    "Book Now & Save Big—Up to <span class="text-[#ff0000] font-bold  ">30% Off on World Tours!</span>"
+                </p>
+            </div>
+    
+            <!-- Buttons -->
+            <div id="textani" class="flex justify-center gap-6 mt-6">
+                <button id="seeMore" class="transition duration-500 hover:text-[#219ebc] text-[#ff0000] font-bold text-[20px]">
+                    See More
+                </button>
+                <button id="bookNow" class="transition duration-500 hover:text-[#219ebc] text-[#ff0000] font-bold text-[20px]">
+                    Book Now
+                </button>
+            </div>
+        </div>        <div>
+        <!-- Image Grid (Optional Section) -->
+        <!-- <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-5 bottom-10 absolute z-20 w-full px-5"> -->
+            <!-- Example Image with Hover Text -->
+            <!-- <div class="h-30 w-full bg-black relative group">
+                <img class="w-full h-full object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
+                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
+                    Image 1
+                </p>
+            </div> -->
+            <!-- Repeat for other images if necessary -->
         </div>
-
-
-         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-5 bottom-10 absolute z-10 w-full px-5"> 
-            <!-- Image with Hover Text -->
-            <!-- <div class="h-30 w-full bg-black relative group">
-                <img class="w-full h-full object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt=""> -->
-        
-                <!-- Text (hidden by default, shown on hover) -->
-                <!-- <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div> -->
-        
-            <!-- Repeat for other images -->
-            <!-- <div class="h-30 w-full bg-black relative group">
-                <img class="w-full h-full object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-            <div class="h-30 w-full bg-black relative group">
-                <img class="w-full h-full object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-            <div class="h-30 w-full bg-black relative group">
-                <img class="w-full h-full object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div> -->
-            <!-- Add more images similarly -->
-
-            <!-- <div class="h-30 w-full bg-black relative group  md:hidden  ">
-                <img class="w-full h-full object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-
-            <div class="h-30 w-full bg-black relative group  md:hidden ">
-                <img class="w-full h-full object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-
-            <div class="h-30 w-full bg-black relative group md:hidden   ">
-                <img class="w-full h-full object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-
-            <div class="h-30 w-full bg-black relative group md:hidden    ">
-                <img class="w-full h-full object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div> -->
-        </div> 
-        
-        
+    
     </section>
+    
 
 
+
+     
+    
+    
+    
 
     <section class="  ">
         <div class="text-center">
-            <p class="text-5xl p-4 ">
+            <p class="text-5xl text-cyan-500 p-4 ">
                 recommended  trips
             </p>
         </div>
         <br><br>
     
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-6 gap-3 pl-[20px] ">
-            <div class=" md:h-40 w-40   relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class="md:h-40 w-40 relative group ">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class="md:h-40 w-40  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class="md:h-40 w-40  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class="md:h-40 w-40  relative group ">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class=" md:h-40 w-40  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
 
-            <div class=" md:h-40 w-40  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+        
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 pl-[100px]">
+            <!-- Card 1 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/young-woman-standing-temple-gates-lempuyang-luhur-temple-bali-indonesia-vintage-tone_335224-369.avif"
+                  alt="Temple Gates"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Explore Bali
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-
-            <div class=" md:h-40 w-40  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 2 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/pangong-lake-mountain-leh-ladakh-india_1150-10930.avif"
+                  alt="Pangong Lake"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Pangong Lake
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-
-            <div class=" md:h-40 w-40  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 3 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/beautiful-shot-udaipur-from-window-city-palace_181624-44764.avif"
+                  alt="Udaipur"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Udaipur
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-
-            <div class=" md:h-40 w-40  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 4 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/lighthouse-island-fuerteventura-captured-spain_181624-39936.avif"
+                  alt="Lighthouse"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Lighthouse
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-
-            <div class=" md:h-40 w-40  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 5 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/western-woman-lying-boat-taking-selfies-varanasi_53876-65338.avif"
+                  alt="Varanasi"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Varanasi
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-
-            <div class=" md:h-40 w-40  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 6 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/bamboo-forest-asian-woman-wearing-japanese-traditional-kimono-bamboo-forest-kyoto-japan_335224-224.avif"
+                  alt="Bamboo Forest"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Bamboo Forest
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-            
+          
+            <!-- Card 7 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/arch-triumph-night-paris-france_268835-878.avif"
+                  alt="Arc de Triomphe"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Arc de Triomphe
+                </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
+            </div>
+          
+            <!-- Card 8 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/aerial-shot-pin-valley-seen-from-mudh-village_181624-29081.avif"
+                  alt="Pin Valley"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Pin Valley
+                </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
+            </div>
+          </div>
+          
+    </section>
     
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-[#464646]">
+        <!-- Card 1 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 1</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Discover the beauty of the world. Plan your trip today!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
     
+        <!-- Card 2 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 2</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Embark on your next adventure with us.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 3</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Explore exotic destinations with amazing deals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 4</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Join us for the journey of a lifetime.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -237,179 +334,526 @@ ss
 
     <section class="  ">
         <div class="text-center">
-            <p class="text-5xl p-4 ">
-                solo trips
+            <p class="text-5xl text-cyan-500 p-4 ">
+                recommended  trips
             </p>
         </div>
         <br><br>
     
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 pl-[20px] ">
-            <div class=" md:h-45 w-45   relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+
+        
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 pl-[100px]">
+            <!-- Card 1 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/young-woman-standing-temple-gates-lempuyang-luhur-temple-bali-indonesia-vintage-tone_335224-369.avif"
+                  alt="Temple Gates"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Explore Bali
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-    
-            <div class="md:h-45 w-45 relative group ">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 2 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/pangong-lake-mountain-leh-ladakh-india_1150-10930.avif"
+                  alt="Pangong Lake"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Pangong Lake
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-    
-            <div class="md:h-45 w-45  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 3 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/beautiful-shot-udaipur-from-window-city-palace_181624-44764.avif"
+                  alt="Udaipur"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Udaipur
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-    
-            <div class="md:h-45 w-45  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 4 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/lighthouse-island-fuerteventura-captured-spain_181624-39936.avif"
+                  alt="Lighthouse"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Lighthouse
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-    
-            <div class="md:h-45 w-45  relative group ">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 5 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/western-woman-lying-boat-taking-selfies-varanasi_53876-65338.avif"
+                  alt="Varanasi"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Varanasi
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
-    
-            <div class=" md:h-45 w-45  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+          
+            <!-- Card 6 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/bamboo-forest-asian-woman-wearing-japanese-traditional-kimono-bamboo-forest-kyoto-japan_335224-224.avif"
+                  alt="Bamboo Forest"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Bamboo Forest
                 </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
             </div>
+          
+            <!-- Card 7 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/arch-triumph-night-paris-france_268835-878.avif"
+                  alt="Arc de Triomphe"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Arc de Triomphe
+                </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
+            </div>
+          
+            <!-- Card 8 -->
+            <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
+              <a href="#" class="block">
+                <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/aerial-shot-pin-valley-seen-from-mudh-village_181624-29081.avif"
+                  alt="Pin Valley"
+                />
+                <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Pin Valley
+                </p>
+              </a>
+              <button class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-1">
+                Learn More
+              </button>
+            </div>
+          </div>
+          
+    </section>
     
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-[#464646]">
+        <!-- Card 1 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 1</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Discover the beauty of the world. Plan your trip today!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
     
+        <!-- Card 2 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 2</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Embark on your next adventure with us.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 3</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Explore exotic destinations with amazing deals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 4</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Join us for the journey of a lifetime.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
     
 
 
-    <section class="  ">
-        <div class="text-center">
-            <p class="text-5xl p-4 ">
-                Family Tours
-            </p>
+    <section class="text-center py-10">
+      <p class="text-5xl font-bold text-cyan-500 mb-6">Recommended Trips</p>
+    
+      <!-- Grid for trip cards -->
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 px-10">
+          <!-- Card 1 -->
+          <div class="w-full h-60 relative group rounded-lg shadow-md overflow-hidden">
+              <a href="#">
+                  <img
+                      class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                      src="img/young-woman-standing-temple-gates-lempuyang-luhur-temple-bali-indonesia-vintage-tone_335224-369.avif"
+                      alt="Temple Gates">
+                  <p
+                      class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Explore Bali
+                  </p>
+              </a>
+              <button
+                  class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-2">
+                  Learn More
+              </button>
+          </div>
+    
+          <!-- Repeat for additional cards -->
+          <!-- Card 2 -->
+          <div class="w-full h-60 relative group rounded-lg shadow-md overflow-hidden">
+              <a href="#">
+                  <img
+                      class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                      src="img/pangong-lake-mountain-leh-ladakh-india_1150-10930.avif"
+                      alt="Pangong Lake">
+                  <p
+                      class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Pangong Lake
+                  </p>
+              </a>
+              <button
+                  class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-2">
+                  Learn More
+              </button>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="w-full h-60 relative group rounded-lg shadow-md overflow-hidden">
+              <a href="#">
+                  <img
+                      class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                      src="img/beautiful-shot-udaipur-from-window-city-palace_181624-44764.avif"
+                      alt="Udaipur">
+                  <p
+                      class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Udaipur
+                  </p>
+              </a>
+              <button
+                  class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-2">
+                  Learn More
+              </button>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="w-full h-60 relative group rounded-lg shadow-md overflow-hidden">
+              <a href="#">
+                  <img
+                      class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                      src="img/lighthouse-island-fuerteventura-captured-spain_181624-39936.avif"
+                      alt="Lighthouse">
+                  <p
+                      class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Lighthouse
+                  </p>
+              </a>
+              <button
+                  class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-2">
+                  Learn More
+              </button>
+          </div>
+      </div>
+    </section>
+    
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-[#464646]">
+        <!-- Card 1 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 1</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Discover the beauty of the world. Plan your trip today!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
         </div>
-        <br><br>
     
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 pl-[20px] ">
-            <div class=" md:h-45 w-45   relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+        <!-- Card 2 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 2</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Embark on your next adventure with us.
                 </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
             </div>
+        </div>
     
-            <div class="md:h-45 w-45 relative group ">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+        <!-- Card 3 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 3</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Explore exotic destinations with amazing deals.
                 </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
             </div>
+        </div>
     
-            <div class="md:h-45 w-45  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
+        <!-- Card 4 -->
+        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+            <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Card 4</h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    Join us for the journey of a lifetime.
                 </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                        Book Now
+                    </button>
+                </div>
             </div>
-    
-            <div class="md:h-45 w-45  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class="md:h-45 w-45  relative group ">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class=" md:h-45 w-45  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-    
         </div>
     </section>
     
 
 
-    <section class="  ">
-        <div class="text-center">
-            <p class="text-5xl p-4 ">
-                commercial trip
-            </p>
+<br>
+
+<section>
+  <section class="text-center py-10">
+  <p class="text-5xl font-bold text-cyan-500 mb-6">Recommended Trips</p>
+<br>
+  <!-- Grid for trip cards -->
+  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 px-10">
+      <!-- Card 1 -->
+      <div class="w-full h-60 relative group rounded-lg shadow-md overflow-hidden">
+          <a href="#">
+              <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/young-woman-standing-temple-gates-lempuyang-luhur-temple-bali-indonesia-vintage-tone_335224-369.avif"
+                  alt="Temple Gates">
+              <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Explore Bali
+              </p>
+          </a>
+          <button
+              class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-2">
+              Learn More
+          </button>
+      </div>
+
+      <!-- Repeat for additional cards -->
+      <!-- Card 2 -->
+      <div class="w-full h-60 relative group rounded-lg shadow-md overflow-hidden">
+          <a href="#">
+              <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/pangong-lake-mountain-leh-ladakh-india_1150-10930.avif"
+                  alt="Pangong Lake">
+              <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Pangong Lake
+              </p>
+          </a>
+          <button
+              class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-2">
+              Learn More
+          </button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-full h-60 relative group rounded-lg shadow-md overflow-hidden">
+          <a href="#">
+              <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/beautiful-shot-udaipur-from-window-city-palace_181624-44764.avif"
+                  alt="Udaipur">
+              <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Udaipur
+              </p>
+          </a>
+          <button
+              class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-2">
+              Learn More
+          </button>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="w-full h-60 relative group rounded-lg shadow-md overflow-hidden">
+          <a href="#">
+              <img
+                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  src="img/lighthouse-island-fuerteventura-captured-spain_181624-39936.avif"
+                  alt="Lighthouse">
+              <p
+                  class="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Lighthouse
+              </p>
+          </a>
+          <button
+              class="mt-2 w-full text-center text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md py-2">
+              Learn More
+          </button>
+      </div>
+  </div>
+</section>
+
+<!-- Secondary Section for Highlighted Cards -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-[#464646]">
+  <!-- Highlighted Card Template -->
+  <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+      <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+      <div class="p-6 flex flex-col justify-center md:w-1/2">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Journey to Paradise</h2>
+          <p class="text-gray-600 text-lg mb-6">
+              Embark on a luxurious journey to stunning destinations.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+              <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                  Learn More
+              </button>
+              <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                  Book Now
+              </button>
+          </div>
+      </div>
+  </div>
+
+  <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+    <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+    <div class="p-6 flex flex-col justify-center md:w-1/2">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Journey to Paradise</h2>
+        <p class="text-gray-600 text-lg mb-6">
+            Embark on a luxurious journey to stunning destinations.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                Learn More
+            </button>
+            <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                Book Now
+            </button>
         </div>
-        <br><br>
-    
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 pl-[20px] ">
-            <div class=" md:h-45 w-45   relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class="md:h-45 w-45 relative group ">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class="md:h-45 w-45  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class="md:h-45 w-45  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class="md:h-45 w-45  relative group ">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-            <div class=" md:h-45 w-45  relative group">
-                <img class="object-cover" src="img/istockphoto-1629533738-612x612.jpg" alt="">
-                <p class="absolute inset-0 flex items-center justify-center text-white text-sm font-bold bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                    abcs
-                </p>
-            </div>
-    
-    
-        </div>
-    </section>
-    
-
-
-<br><br><br><br>
-
-
-
+    </div>
+</div>
+</section>
+</section>
+ <br><br><br>
     <footer
     style="background-image: url(img/suitcase-with-hat-sunglasses-black-background-travel-concept-with-copy-space-individual-text_157125-15654.jpg); background-position:center ;  background-size: cover;">
 

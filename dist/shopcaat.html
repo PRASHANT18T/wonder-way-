@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="p-0 m-0 bg-[#464646]">
+    
+    <section class="relative w-full h-[70vh] overflow-hidden">
+        <!-- Slideshow Background -->
+        <div id="slideshow" class="relative w-full h-screen">
+            <!-- Image 1 -->
+            <div class="slide absolute inset-0 w-full h-full opacity-100 transition-opacity duration-1000">
+              <img
+                src="img/happy-caucasian-pretty-long-hair-elegant-tourist-woman-dress-with-red-suitcase-outside-hotel.jpg"
+                alt="Background Image 1"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 flex justify-center items-center bg-black/50 text-[#a2d2ff] text-3xl font-bold">
+               <p>"Experience unmatched luxury and  <span class="text-red-600"> save 30%</span> on your dream escape—book now!"</p> 
+              </div>
+              
+            </div>
+            
+            <!-- Image 2 -->
+            <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000">
+              <img
+                src="img/adorable-woman-enjoying-sunset-bakota-bay.jpg"
+                alt="Background Image 2"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 flex justify-center items-center bg-black/50 text-[#a2d2ff] md:text-3xl sm:text-lg font-bold">
+               <p>"Discover the world on your terms—solo travel, infinite stories, now at <span class="text-cyan-600"> Flat 40% Off!</span>"
+            </p> 
+              </div>
+            </div>
+          
+            <!-- Image 3 -->
+            <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000">
+              <img
+                src="img/young-beautiful-friends-travelers-with-backpacks-walking-canyon.jpg"
+                alt="Background Image 3"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 flex justify-center items-center bg-black/50 text-[#a2d2ff] md:text-3xl sm:text-lgfont-bold">
+              <p>  "Embark on thrilling adventures—conquer peaks and trails with our <span class="text-red-600"> exclusive trekking & hiking offers!</span>"</p>
+              </div>
+            </div>
+          
+            <!-- Image 4 -->
+            <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000">
+              <img
+                src="img/woman-lying-her-boyfriend-wooden-harbor.jpg"
+                alt="Background Image 4"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 flex justify-center items-center bg-black/50 text-[#a2d2ff] md:text-3xl sm:text-lg font-bold">
+              <p> "Embark on your dream honeymoon with exclusive packages—book now and enjoy <span class="text-cyan-600"> 20% off!!</span> "</p> 
+              </div>
+            </div>
+          
+            <!-- Image 5 -->
+            <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000">
+              <img
+                src="img/full-shot-family-hanging-out-jetty.jpg"
+                alt="Background Image 5"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 flex justify-center items-center bg-black/50 text-[#a2d2ff] md:text-3xl sm:text-lg font-bold">
+               <p>
+                "Create unforgettable memories with family tours—book today and <span class="text-red-600"> get 15% off!!</span> your adventure!"</p> 
+              </div>
+            </div>
+          </div>
+
+          
+           <!-- Navbar -->
+        <nav class="absolute top-0 left-0 w-full flex items-center justify-between p-4 z-30 bg-black/50">
+          <div class="text-white font-bold text-xl">
+            <a href="#">Wonder Way</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="p-2 rounded bg-white/20 text-white focus:outline-none focus:ring focus:ring-blue-300"
+            />
+            <button class="p-2 bg-blue-500 text-white rounded hover:bg-blue-600">Search</button>
+          </div>
+          <div class="hidden md:flex md:flex-row md:space-x-6 font-bold text-xl text-white">
+            <a href="index.html" class="hover:text-blue-200">Home</a>
+            <a href="trips.html" class="hover:text-blue-200">Trips</a>
+          
+            <a href="contact.html" class="hover:text-blue-200">Contact</a>
+            <a href="blogs.html" class="hover:text-blue-200">Blog</a>
+            <a href="login.html" class="hover:text-blue-200">Login</a>
+            <a href="cart.html" class="hover:text-blue-200">cart</a>
+            <a href="#" class="hover:text-blue-200">profile</a>
+          </div>
+        </nav>
+
+
+</section>
+<br><br>
+
+<section>
+    <div class="container mx-auto ">
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <!-- Single Div with Image and Text -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/female-tourists-spread-their-arms-held-their-wings_1150-7462.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Solo Travel</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/istockphoto-851930128-612x612.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Family Tours</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/traveling-with-off-road-car_23-2151473062.jpg" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Adventure Trips</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img
+                src="img/couple-love-romantic-hugs-sand-desert-evening-romantic-atmosphere-sand-burn-candles-form-heart_105751-1306.avif"
+                alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Honeymoon Packages</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/portrait-senior-man-with-camera-device-world-photography-day-celebration_23-2151657219.avif"
+                alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Cultural Tours</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/crossroad-car-safari-scene_23-2151822304.avif" alt="Image"
+                class="w-full h-48 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Wildlife Safaris</span>
+              </div>
+            </div>
+          </a>
+  
+  
+</section>
+<br><br>
+<section>
+    <div class="container mx-auto ">
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <!-- Single Div with Image and Text -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/female-tourists-spread-their-arms-held-their-wings_1150-7462.jpg" alt="Image"
+                class="w-full h-68 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Solo Travel</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/istockphoto-851930128-612x612.jpg" alt="Image"
+                class="w-full h-68 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Family Tours</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/traveling-with-off-road-car_23-2151473062.jpg" alt="Image"
+                class="w-full h-68 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Adventure Trips</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img
+                src="img/couple-love-romantic-hugs-sand-desert-evening-romantic-atmosphere-sand-burn-candles-form-heart_105751-1306.avif"
+                alt="Image"
+                class="w-full h-68 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Honeymoon Packages</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/portrait-senior-man-with-camera-device-world-photography-day-celebration_23-2151657219.avif"
+                alt="Image"
+                class="w-full h-68 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Cultural Tours</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Repeat the above block for 12 images -->
+          <a href="#" class="group">
+            <div class="relative border-2 border-transparent rounded-lg overflow-hidden transition-all duration-300">
+              <!-- Image: The image will become fully rounded on hover -->
+              <img src="img/crossroad-car-safari-scene_23-2151822304.avif" alt="Image"
+                class="w-full h-68 object-cover rounded-lg group-hover:scale-125 transition-all duration-300">
+  
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-center py-2 rounded-b-lg">
+                <span class="text-sm font-medium text-cyan-400">Wildlife Safaris</span>
+              </div>
+            </div>
+          </a>
+  
+  
+
+</section>
+
+      
+
+<script>
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.opacity = i === index ? '1' : '0';
+  });
+}
+
+function startSlideshow() {
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }, 3000); // Change slide every 3 seconds
+}
+
+// Start the slideshow
+startSlideshow();
+
+</script>
+</body>
+</html>

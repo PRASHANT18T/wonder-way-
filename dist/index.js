@@ -47,10 +47,10 @@ readButGodafoss.addEventListener("click", () => {
   window.location.href = "godafoss-waterfall.html";
 });
 
-const bookNowGodafoss = document.getElementById("bookNowGodafoss");
+const bookNow = document.getElementById("bookNow");
 
-bookNowGodafoss.addEventListener("click", () => {
-  window.location.href = "booknowwaterfall.html";
+bookNow.addEventListener("click", () => {
+  window.location.href =  "booknow.html","_blank" ;
 });
 
 
@@ -90,3 +90,53 @@ searchInput.addEventListener("keypress", (event) => {
     handleSearch();
   }
 });
+
+
+
+
+
+
+
+function addToCart() {
+  // Get content of the 'gotocart' div
+  const productContent = document.getElementById('gotocart').innerHTML;
+
+  // Save it in localStorage (or sessionStorage)
+  localStorage.setItem('cartProduct', productContent);
+
+  // Optionally, you can alert user or show some message
+  alert('Product added to cart!');
+}
+
+
+
+ const morecattrips = document.getElementById  ("morecattrips");
+
+morecattrips.addEventListener("click", () => {
+  window.location.href =  "tripscat.html" ;
+});
+
+
+
+
+
+
+
+function addToCart(productId) {
+  // Get the content of the specific product card using its id
+  const productContent = document.getElementById(productId).innerHTML;
+
+  // Retrieve existing cart data from localStorage or initialize empty array
+  let cartProducts = JSON.parse(localStorage.getItem('cartProducts')) || [];
+
+  // Create an object with unique ID and content
+  const product = { id: productId, content: productContent };
+
+  // Add the product to the cart array
+  cartProducts.push(product);
+
+  // Save updated cart data back to localStorage
+  localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
+
+  alert('Product added to cart!');
+}

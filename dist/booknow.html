@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Booking Process</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-gray-600">
+
+    <!-- Main Container -->
+    <div id="app" class="max-w-4xl mx-auto py-12 px-4">
+        <!-- Progress Bar -->
+        <div class="relative mb-10">
+            <div class="flex justify-between text-sm font-medium mb-3">
+                <span>Step 1: Personal Details</span>
+                <span>Step 2: Health Form</span>
+                <span>Step 3: Travel & Payment</span>
+            </div>
+            <div class="w-full bg-gray-100  rounded-full h-2.5">
+                <div id="progress-bar" class="bg-blue-500 h-2.5 rounded-full" style="width: 33%;"></div>
+            </div>
+        </div>
+
+        <!-- Step 1: Personal Details -->
+        <div id="step1" class="bg-white/50 shadow-lg p-6 rounded-lg">
+            <h2 class="text-2xl font-semibold mb-6">Step 1: Personal Details</h2>
+            <form>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700">Full Name</label>
+                        <input type="text" id="full-name" class="w-full p-3 border rounded-md" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Email</label>
+                        <input type="email" id="email" class="w-full p-3 border rounded-md" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Phone Number</label>
+                        <input type="tel" id="phone" class="w-full p-3 border rounded-md" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Nationality</label>
+                        <input type="text" id="nationality" class="w-full p-3 border rounded-md" placeholder="Enter your nationality">
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-gray-700">Address</label>
+                        <textarea id="address" class="w-full p-3 border rounded-md" rows="3" placeholder="Enter your address"></textarea>
+                    </div>
+                </div>
+            </form>
+            <div class="flex justify-end mt-6">
+                <button id="next1" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Next</button>
+            </div>
+        </div>
+
+        <!-- Step 2: Health Form -->
+        <div id="step2" class="hidden bg-white/50 shadow-lg p-6 rounded-lg">
+            <h2 class="text-2xl font-semibold mb-6">Step 2: Health Form</h2>
+            <form>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700">Age</label>
+                        <input type="number" id="age" class="w-full p-3 border rounded-md" placeholder="Enter your age">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Do you have travel insurance?</label>
+                        <select id="insurance" class="w-full p-3 border rounded-md">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Allergies</label>
+                        <textarea id="allergies" class="w-full p-3 border rounded-md" rows="3" placeholder="List any allergies"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Physical Fitness</label>
+                        <select id="fitness" class="w-full p-3 border rounded-md">
+                            <option value="">Select</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="average">Average</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="flex justify-between mt-6">
+                <button id="prev2" class="bg-gray-400 text-white px-6 py-2 rounded-md hover:bg-gray-500 transition">Previous</button>
+                <button id="next2" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Next</button>
+            </div>
+        </div>
+
+        <!-- Step 3: Travel & Payment -->
+        <div id="step3" class="hidden bg-white/50 shadow-lg p-6 rounded-lg">
+            <h2 class="text-2xl font-semibold mb-6">Step 3: Travel & Payment</h2>
+            <form>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700">Trip Category</label>
+                        <select id="trip-category" class="w-full p-3 border rounded-md">
+                            <option value="">Select</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="cultural">Cultural</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Number of Members</label>
+                        <input type="number" id="members" class="w-full p-3 border rounded-md" placeholder="Number of members">
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-gray-700">Special Requests</label>
+                        <textarea id="special-requests" class="w-full p-3 border rounded-md" rows="3" placeholder="Enter any special requests"></textarea>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-gray-700">Payment Method</label>
+                        <select id="payment-method" class="w-full p-3 border rounded-md">
+                            <option value="">Select</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="upi">UPI</option>
+                            <option value="crypto">Cryptocurrency</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="flex justify-between mt-6">
+                <button id="prev3" class="bg-gray-400 text-white px-6 py-2 rounded-md hover:bg-gray-500 transition">Previous</button>
+                <button id="submit" class="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+const step1 = document.getElementById("step1");
+const step2 = document.getElementById("step2");
+const step3 = document.getElementById("step3");
+const next1 = document.getElementById("next1");
+const next2 = document.getElementById("next2");
+const prev2 = document.getElementById("prev2");
+const prev3 = document.getElementById("prev3");
+  
+
+
+
+
+
+next1.addEventListener("click", () => {
+      step1.classList.add("hidden");
+      step2.classList.remove("hidden");
+    });
+
+    prev2.addEventListener("click", () => {
+      step1.classList.remove("hidden");
+      step2.classList.add("hidden");
+    });
+
+    next2.addEventListener("click", () => {
+      step2.classList.add("hidden");
+      step3.classList.remove("hidden");
+    });
+
+    prev3.addEventListener("click", () => {
+      step2.classList.remove("hidden");
+      step3.classList.add("hidden");
+    });
+
+
+
+
+        
+    document.getElementById('submit').addEventListener('click', () => {
+  alert('Booking Submitted!');
+  history.back(); // Navigate to the previous page
+});
+
+    </script>
+
+</body>
+
+</html>
