@@ -117,6 +117,13 @@ morecattrips.addEventListener("click", () => {
 });
 
 
+const seebali = document.getElementById ("seebali");
+
+seebali.addEventListener("click", () => {
+  window.location.href = "seemorebali.html";
+});
+ 
+
 
 
 
