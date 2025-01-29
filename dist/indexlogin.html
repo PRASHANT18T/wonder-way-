@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-gray-600 min-h-screen flex items-center justify-center " style="background-image: url(img/travel-concept-with-landmarks.jpg); background-position: center; background-size: cover">
+  <div class="bg-white/70 shadow-md rounded-lg p-6 w-full max-w-md">
+    <!-- Step 1 -->
+    <div id="step1" class="step">
+      <h2 class="text-2xl font-semibold text-center mb-4">Login</h2>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700">Gmail</label>
+        <input id="email" type="email" placeholder="Enter your Gmail"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <div class="mb-4">
+        <label for="otp" class="block text-sm font-medium text-gray-700">OTP</label>
+        <input id="otp" type="number" placeholder="Enter OTP"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <button id="nextBtn1"
+        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md">
+        Next
+      </button>
+    </div>
+
+    <!-- Step 2 -->
+    <div id="step2" class="step hidden">
+      <h2 class="text-2xl font-semibold text-center mb-4">Personal Details</h2>
+      <div class="mb-4">
+        <label for="firstName" class="block text-sm font-medium text-gray-700">First Name</label>
+        <input id="firstName" type="text" placeholder="Enter your first name"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <div class="mb-4">
+        <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name</label>
+        <input id="lastName" type="text" placeholder="Enter your last name"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <div class="mb-4">
+        <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number</label>
+        <input id="mobile" type="tel" placeholder="Enter your mobile number"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <div class="mb-4">
+        <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+        <input id="dob" type="date"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2" />
+      </div>
+      <div class="mb-4">
+        <label for="gender" class="block text-sm font-medium text-gray-700">Gender</label>
+        <select id="gender" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2">
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button id="submitbtt"
+        class="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-md">
+        Submit
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const step1 = document.getElementById("step1");
+    const step2 = document.getElementById("step2");
+    const nextBtn1 = document.getElementById("nextBtn1");
+    const submitbtt = document.getElementById("submitbtt");
+    const profile = document.getElementById("profile");
+    const loginBtn = document.getElementById("loginBtn");
+
+
+    document.getElementById('submitbtt').addEventListener('click', () => {
+  
+  window.location.href = "index2.html"; // Navigate to the previous page
+});
+
+    submitbtt.addEventListener("click", () => {
+      ;
+    });
+
+
+
+    nextBtn1.addEventListener("click", () => {
+      step1.classList.add("hidden");
+      step2.classList.remove("hidden");
+    });
+
+    
+  
+
+ 
+
+
+  </script>
+</body>
+</html>

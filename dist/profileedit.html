@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-gray-400 p-8">
+    <div class="max-w-3xl mx-auto bg-gray-400 p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-semibold mb-6 text-center">Edit Profile</h1>
+        
+        <form id="profile-form">
+            <div class="mb-4">
+                <label for="profile-name" class="block text-lg font-medium">Name:</label>
+                <input type="text" id="profile-name" class="w-full p-3 border border-gray-300 rounded-md" required><br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="bio" class="block text-lg font-medium">Bio:</label>
+                <textarea id="bio" class="w-full p-3 border border-gray-300 rounded-md" required></textarea><br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="dob" class="block text-lg font-medium">Date of Birth:</label>
+                <input type="date" id="dob" class="w-full p-3 border border-gray-300 rounded-md" required><br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="location" class="block text-lg font-medium">Location:</label>
+                <input type="text" id="location" class="w-full p-3 border border-gray-300 rounded-md" required><br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="interests" class="block text-lg font-medium">Interests:</label>
+                <input type="text" id="interests" class="w-full p-3 border border-gray-300 rounded-md" required><br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="trip-history" class="block text-lg font-medium">Trip History:</label>
+                <textarea id="trip-history" class="w-full p-3 border border-gray-300 rounded-md" required></textarea><br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="upcoming-trips" class="block text-lg font-medium">Upcoming Trips:</label>
+                <textarea id="upcoming-trips" class="w-full p-3 border border-gray-300 rounded-md" required></textarea><br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="blogs" class="block text-lg font-medium">Blogs:</label>
+                <textarea id="blogs" class="w-full p-3 border border-gray-300 rounded-md" required></textarea><br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="social-links" class="block text-lg font-medium">Social Links:</label>
+                <textarea id="social-links" class="w-full p-3 border border-gray-300 rounded-md" required></textarea><br><br>
+            </div>
+
+            <div class="text-center">
+                <button type="button" onclick="saveProfile()" class="bg-blue-500 text-white p-3 rounded-md w-full hover:bg-blue-600 transition duration-300">Save Profile</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        function saveProfile() {
+            const profileData = {
+                profileName: document.getElementById('profile-name').value,
+                bio: document.getElementById('bio').value,
+                dob: document.getElementById('dob').value,
+                location: document.getElementById('location').value,
+                interests: document.getElementById('interests').value,
+                tripHistory: document.getElementById('trip-history').value,
+                upcomingTrips: document.getElementById('upcoming-trips').value,
+                blogs: document.getElementById('blogs').value,
+                socialLinks: document.getElementById('social-links').value
+            };
+
+            localStorage.setItem('profileData', JSON.stringify(profileData));
+            window.location.href = 'profile.html';
+        }
+    </script>
+</body>
+</html>
