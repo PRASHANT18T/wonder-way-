@@ -122,7 +122,21 @@ const seebali = document.getElementById ("seebali");
 seebali.addEventListener("click", () => {
   window.location.href = "seemorebali.html";
 });
+
+
+
+const ClimbingKit =document.getElementById ("ClimbingKit");
+
+ClimbingKit.addEventListener("click", () => {
+  window.location.href = "ClimbingKit.html" , "_blank";
+});
  
+
+const shopcat = document.getElementById("shopcat");
+
+shopcat.addEventListener("click", () => {
+  window.location.href = "shopcaat.html";
+});
 
 
 

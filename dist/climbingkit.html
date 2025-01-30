@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+ 
+        <nav class="  top-0 left-0 w-full flex items-center justify-between p-4 z-30 bg-black/50">
+            <div class="text-white font-bold text-xl">
+              <a href="#">Wonder Way</a>
+            </div>
+            <div class="flex items-center space-x-2">
+              <input
+                type="text"
+                placeholder="Search..."
+                class="p-2 rounded bg-white/20 text-white focus:outline-none focus:ring focus:ring-blue-300"
+              />
+              <button class="p-2 bg-blue-500 text-white rounded hover:bg-blue-600">Search</button>
+            </div>
+            <div class="hidden md:flex md:flex-row md:space-x-6 font-bold text-xl text-white">
+              <a href="index.html" class="hover:text-blue-200">Home</a>
+              <a href="trips.html" class="hover:text-blue-200">Trips</a>
+            
+              <a href="contact.html" class="hover:text-blue-200">Contact</a>
+              <a href="blogs.html" class="hover:text-blue-200">Blog</a>
+              <a href="login.html" class="hover:text-blue-200">Login</a>
+              <a href="cart.html" class="hover:text-blue-200">cart</a>
+              <a href="#" class="hover:text-blue-200">profile</a>
+            </div>
+          </nav>
+    
+     </header> 
+
+
+
+
+    <!-- Climbing Kit Details Page -->
+<section class="bg-gray-50 py-12 px-6 lg:px-24">
+    <!-- Header Image -->
+    <div class="relative mb-12">
+        <img src="img/side-view-adult-climbing-mountains.jpg" alt="Climbing Kit" class="w-full h-[400px] object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-center">
+            <h1 class="text-white text-4xl font-bold">Climbing Kit - Your Ultimate Adventure Companion</h1>
+        </div>
+    </div>
+
+    <!-- Kit Information Section -->
+    <div class="flex flex-wrap lg:flex-nowrap gap-12">
+        <div class="w-full lg:w-1/2">
+            <img src="img/back-view-woman-with-climbing-equipment.jpg" alt="Climbing Kit" class="w-full h-[300px] object-cover rounded-lg shadow-lg">
+        </div>
+        <div class="w-full lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">The Perfect Kit for Any Trek</h2>
+            <p class="text-lg text-gray-600 mb-6">
+                This climbing kit is versatile and designed for any kind of trek or mountain climbing adventure. Whether you're a beginner or an experienced climber, this kit has everything you need for a safe and successful journey.
+            </p>
+            <div class="flex justify-center lg:justify-start gap-4">
+                <span class="bg-yellow-400 text-black py-2 px-4 rounded-full text-lg font-semibold">price: 20$</span>
+            </div>
+            <br>
+            <div class="flex justify-center lg:justify-start gap-4">
+                <a href="" class=" bottom-6 right-6 bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">
+                    shop now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Kit Information -->
+    <div class="mt-12">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">Kit Information</h3>
+        <p class="text-lg text-gray-600 mb-4">
+            Our climbing kit is designed for both beginners and seasoned climbers. It includes everything you need for a safe and successful climbing journey.
+        </p>
+        <ul class="list-disc pl-8 space-y-4">
+            <li class="text-gray-600">Rope - 50m, 10mm thick, durable and lightweight</li>
+            <li class="text-gray-600">Climbing Harness - Adjustable for comfort</li>
+            <li class="text-gray-600">Helmet - Impact-resistant with adjustable straps</li>
+            <li class="text-gray-600">Carabiners - 3 heavy-duty, lockable carabiners</li>
+            <li class="text-gray-600">Climbing Shoes - Flexible and comfortable, suitable for all terrains</li>
+        </ul>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="mt-16">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">Customer Reviews</h3>
+        <div class="space-y-8">
+            <!-- Review 1 -->
+            <div class="flex gap-4 items-center">
+                <img src="https://example.com/buyer1.jpg" alt="Buyer 1" class="w-16 h-16 rounded-full object-cover">
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">John Doe</h4>
+                    <p class="text-sm text-gray-500">Purchased the climbing kit for my trek and it worked perfectly! Highly recommend it.</p>
+                    <span class="bg-yellow-400 text-black py-1 px-3 rounded-full text-sm">Rating: 5/5</span>
+                </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="flex gap-4 items-center">
+                <img src="https://example.com/buyer2.jpg" alt="Buyer 2" class="w-16 h-16 rounded-full object-cover">
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">Jane Smith</h4>
+                    <p class="text-sm text-gray-500">The kit was easy to use, and I felt very secure during my climb. A must-have for all climbers!</p>
+                    <span class="bg-yellow-400 text-black py-1 px-3 rounded-full text-sm">Rating: 4.7/5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Responsive Design for Mobile, Tablet, and Desktop -->
+<style>
+    @media screen and (max-width: 768px) {
+        .lg\\:px-24 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .lg\\:w-1\\/2 {
+            width: 100%;
+        }
+        .lg\\:text-left {
+            text-align: center;
+        }
+    }
+</style>
+
+</body>
+</html>
