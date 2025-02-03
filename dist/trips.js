@@ -9,5 +9,8 @@ menuBtn.addEventListener("click", () => {
 
 
 
+const bookNow = document.getElementById("bookNow");
 
-
+bookNow.addEventListener("click", () => {
+  window.location.href =  "booknow.html" ;
+});

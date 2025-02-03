@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tiips</title>
     <link rel="stylesheet" href="index.css">
+    
 </head>
 
-<body class="m-0 p-0 text-white bg-[#464646] ">
+<body class="m-0 p-0 text-white bg-black ">
 
     <section class="relative h-[70vh] w-screen">
         <!-- Background Image -->
@@ -43,7 +44,7 @@
                 <a href="index.html" class="hover:text-blue-200">Home</a>
                
                 <a href="shop.html" class="hover:text-blue-200">Shop</a>
-                <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                <a href="contact.html" target="_blank" class="hover:text-blue-200">Contact</a>
                 <a href="blogs.html" class="hover:text-blue-200">Blog</a>
                 <a href="login.html" id="loginBtn" class="hover:text-blue-200">Login</a>
                 <a href="" class="hover:text-blue-200">profile</a>
@@ -87,9 +88,14 @@
     </section>
     
 
-
-
+    
      
+
+
+
+
+
+    
     
     
     
@@ -107,7 +113,7 @@
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 pl-[100px]">
             <!-- Card 1 -->
             <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
-              <a href="#" class="block">
+              <a href="seemorebali.html" class="block">
                 <img
                   class="object-cover w-full h-50 transition-transform duration-300 group-hover:scale-110"
                   src="img/young-woman-standing-temple-gates-lempuyang-luhur-temple-bali-indonesia-vintage-tone_335224-369.avif"
@@ -252,20 +258,20 @@
              
     </section>
     
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-[#464646]">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 g-black">
         <!-- Card 1 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black border-2 shadow-lg rounded-lg overflow-hidden hover:scale-105">
             <img src="img/3d-rendering-chinese-great-wall.jpg" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">The Great Wall of China</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">The Great Wall of China</h2>
+                <p class="text-white text-lg mb-6">
                   Highlights: Mutianyu and Badaling sections, breathtaking scenery, and historical insights.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
                         Learn More
                     </button>
-                    <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+                    <button id="bookNow" class=" cursor-pointer bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-300">
                         Book Now
                     </button>
                 </div>
@@ -273,11 +279,11 @@
         </div>
     
         <!-- Card 2 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black border-2 shadow-lg rounded-lg overflow-hidden hover:scale-105">
             <img src="img/young-woman-visiting-pyramids-egypt.jpg" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">The Pyramids of Giza, Egypt</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">The Pyramids of Giza, Egypt</h2>
+                <p class="text-white text-lg mb-6">
                   Highlights: The Great Sphinx, camel rides, and sunset views over the desert.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -292,11 +298,11 @@
         </div>
     
         <!-- Card 3 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black border-2 shadow-lg rounded-lg overflow-hidden hover:scale-105">
             <img src="img/machu-picchu_181624-4952.jpg" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Machu Picchu, Peru</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">Machu Picchu, Peru</h2>
+                <p class="text-white text-lg mb-6">
                   Highlights: The Sun Gate, Temple of the Sun, and the spectacular mountain backdrop.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -311,11 +317,11 @@
         </div>
     
         <!-- Card 4 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black border-2 shadow-lg rounded-lg overflow-hidden hover:scale-105">
             <img src="img/two-people-standing-near-coliseum-rome_1304-4859.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Colosseum, Rome, Italy</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">Colosseum, Rome, Italy</h2>
+                <p class="text-white text-lg mb-6">
                   Highlights: Guided tours, the underground chambers, and nearby Roman Forum.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -347,7 +353,7 @@
             <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
               <a href="#" class="block">
                 <img
-                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  class="object-cover w-50 h-50 transition-transform duration-300 group-hover:scale-110"
                   src="img/views-entrance-indian-temple_119635-5.avif"
                   alt="Temple Gates"
                 />
@@ -365,7 +371,7 @@
             <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
               <a href="#" class="block">
                 <img
-                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  class="object-cover w-50 h-50 transition-transform duration-300 group-hover:scale-110"
                   src="img/hawa-mahal-palace-jaipur-india_53876-31311.avif"
                   alt="Pangong Lake"
                 />
@@ -383,7 +389,7 @@
             <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
               <a href="#" class="block">
                 <img
-                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  class="object-cover w-50 h-50 transition-transform duration-300 group-hover:scale-110"
                   src="img/asian-woman-wearing-thai-dress-costume-traditional-according-thai-culture-pha-dok-siew-waterfall-chiang-mai-thailand_335224-1164.avif"
                   alt="Udaipur"
                 />
@@ -401,7 +407,7 @@
             <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
               <a href="#" class="block">
                 <img
-                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  class="object-cover w-50 h-50 transition-transform duration-300 group-hover:scale-110"
                   src="img/landmark-working-singapore-lights-beautiful_1122-1781.avif"
                   alt="Lighthouse"
                 />
@@ -419,7 +425,7 @@
             <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
               <a href="#" class="block">
                 <img
-                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  class="object-cover w-50 h-50 transition-transform duration-300 group-hover:scale-110"
                   src="img/blue-umbrella-sea-chairs-sky_1203-4918.avif"
                   alt="Varanasi"
                 />
@@ -437,7 +443,7 @@
             <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
               <a href="#" class="block">
                 <img
-                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  class="object-cover w-50 h-50 transition-transform duration-300 group-hover:scale-110"
                   src="img/indian-travel-destination-beautiful-attractive_53876-16345.avif"
                   alt="Bamboo Forest"
                 />
@@ -455,7 +461,7 @@
             <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
               <a href="#" class="block">
                 <img
-                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  class="object-cover w-50 h-50 transition-transform duration-300 group-hover:scale-110"
                   src="img/reflection-clouds-lake-angkor-wat-temple-cambodia_181624-27631.avif"
                   alt="Arc de Triomphe"
                 />
@@ -473,7 +479,7 @@
             <div class="w-50 h-50 relative group rounded-lg shadow-lg overflow-hidden">
               <a href="#" class="block">
                 <img
-                  class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  class="object-cover w-50 h-50 transition-transform duration-300 group-hover:scale-110"
                   src="img/small-town-near-blue-body-water-surrounded-by-beautiful-mountains_181624-4768.avif"
                   alt="Pin Valley"
                 />
@@ -490,13 +496,13 @@
           
     </section>
     
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-[#464646]">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 g-black">
         <!-- Card 1 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg overflow-hidden border-2 hover:scale-105">
             <img src="img/aerial-shot-small-bright-town-snowy-mountains-evening_181624-36838.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Manali, Himachal Pradesh</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">Manali, Himachal Pradesh</h2>
+                <p class="text-white text-lg mb-6">
                   Old Manali for a relaxed vibe with cafes, local markets, and serene surroundings.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -511,11 +517,11 @@
         </div>
     
         <!-- Card 2 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg border-2 overflow-hidden hover:scale-105">
             <img src="img/snow-covered-mountain-against-sky_1048944-28646730.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Shimla, Himachal Pradesh</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">Shimla, Himachal Pradesh</h2>
+                <p class="text-white text-lg mb-6">
                   Kufri for skiing, tobogganing, and adventure parks.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -530,11 +536,11 @@
         </div>
     
         <!-- Card 3 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg border-2 overflow-hidden hover:scale-105">
             <img src="img/cloudy-mountain_1048944-16940299.jpg" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Darjeeling, West Bengal</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">Darjeeling, West Bengal</h2>
+                <p class="text-white text-lg mb-6">
                   Breathtaking views of Kanchenjunga, the third-highest peak in the world.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -549,11 +555,11 @@
         </div>
     
         <!-- Card 4 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg border-2 overflow-hidden hover:scale-105">
             <img src="img/ban-rak-thai-mae-hong-son-thailand_335224-942.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4"> Ooty, Tamil Nadu</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4"> Ooty, Tamil Nadu</h2>
+                <p class="text-white text-lg mb-6">
                   Botanical Gardens showcasing a variety of flora and peaceful walks.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -651,13 +657,13 @@
       </div>
     </section>
     
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-[#464646]">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 g-black">
         <!-- Card 1 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg overflow-hidden border-2 hover:scale-105">
             <img src="img/panoramic-view-famous-ponte-vecchio-with-river-arno-sunset-florence-italy_231208-7683.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Rome, Italy</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">Rome, Italy</h2>
+                <p class="text-white text-lg mb-6">
                   Trevi Fountain and Spanish Steps for a perfect romantic stroll.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -672,11 +678,11 @@
         </div>
     
         <!-- Card 2 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg overflow-hidden border-2 hover:scale-105">
             <img src="img/port-barcelona-evening-spain_1398-4569.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Barcelona, Spain</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">Barcelona, Spain</h2>
+                <p class="text-white text-lg mb-6">
                   Unique architecture by Antoni Gaudí, including the Sagrada Família and Park Güell.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -691,11 +697,11 @@
         </div>
     
         <!-- Card 3 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg overflow-hidden border-2 hover:scale-105">
             <img src="img/wat-arun-temple-bangkok-thailand_335224-972.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Bangkok, Thailand </h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">Bangkok, Thailand </h2>
+                <p class="text-white text-lg mb-6">
                   Stunning temples like Wat Arun, Wat Phra Kaew, and the Grand Palace.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -710,11 +716,11 @@
         </div>
     
         <!-- Card 4 -->
-        <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg overflow-hidden border-2 hover:scale-105">
             <img src="img/lake-is-covered-with-thick-layer-ice-stone-rock_86390-254.jpg" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
             <div class="p-6 flex flex-col justify-center md:w-1/2">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Reykjavik, Iceland</h2>
-                <p class="text-gray-600 text-lg mb-6">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-4">Reykjavik, Iceland</h2>
+                <p class="text-white text-lg mb-6">
                   Stunning landscapes with volcanic mountains, glaciers, and hot springs.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -734,7 +740,7 @@
 <br>
 
 <section>
-  <section class="text-center py-10">
+  <section class="text-center py-10 hidden">
   <p class="text-5xl font-bold text-cyan-500 mb-6">Recommended Trips</p>
 <br>
   <!-- Grid for trip cards -->
@@ -815,9 +821,9 @@
 </section>
 
 <!-- Secondary Section for Highlighted Cards -->
-<section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-[#464646]">
-  <!-- Highlighted Card Template -->
-  <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+ <section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 g-black hidden">
+  
+  <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg overflow-hidden">
       <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
       <div class="p-6 flex flex-col justify-center md:w-1/2">
           <h2 class="text-2xl font-bold text-gray-800 mb-4">Journey to Paradise</h2>
@@ -835,7 +841,7 @@
       </div>
   </div>
 
-  <div class="flex flex-col md:flex-row bg-[#06d6a0] shadow-lg rounded-lg overflow-hidden">
+  <div class="flex flex-col md:flex-row bg-black shadow-lg rounded-lg overflow-hidden">
     <img src="img/beautiful-brunette-girl_1157-4376.avif" alt="Card Image" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
     <div class="p-6 flex flex-col justify-center md:w-1/2">
         <h2 class="text-2xl font-bold text-gray-800 mb-4">Journey to Paradise</h2>
@@ -852,92 +858,114 @@
         </div>
     </div>
 </div>
-</section>
+</section> 
 </section>
  <br><br><br>
-    <footer
-    style="background-image: url(img/suitcase-with-hat-sunglasses-black-background-travel-concept-with-copy-space-individual-text_157125-15654.jpg); background-position:center ;  background-size: cover;">
+ <footer
+ style="background-image: url(img/suitcase-with-hat-sunglasses-black-background-travel-concept-with-copy-space-individual-text_157125-15654.jpg); background-position:center ;  background-size: cover;">
 
-    <section class="  py-10 h-[80vh]  w-[100vw] ">
-      <!-- Company Section -->
-      <div>
-        <h1
-          class="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500 ">
-          -- WANDER WAY --
-        </h1>
-      </div>
-      <br><br>
+ <section class="  py-10 h-[80vh]  w-[100vw] ">
+   <!-- Company Section -->
+   <div>
+     <h1
+       class="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500 ">
+       -- WANDER WAY --
+     </h1>
+   </div>
+   <br><br>
 
-      <!-- Footer Links -->
-      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-0">
-        <!-- Column 1 -->
-        <div>
-          <h1
-            class="text-2xl font-semibold mb-4  text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-red-500 to-rose-500">
-            Company</h1>
-          <ul class="space-y-2 text-cyan-400 text-xl">
-            <li><a href="#" class="hover:text-cyan-400">Blog</a></li>
-            <li><a href="#" class="hover:text-cyan-400">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-cyan-400">FAQs</a></li>
-            <li><a href="#" class="hover:text-cyan-400">Contact</a></li>
-          </ul>
-        </div>
+   <!-- Footer Links -->
+   <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-0">
+     <!-- Column 1 -->
+     <div>
+       <h1
+         class="text-2xl  font-semibold mb-4  text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-red-500 to-rose-500">
+         Company</h1>
+       <ul class="space-y-2 text-cyan-400 text-xl">
+         <li><a href="#" class="hover:hover:font-bold">Blog</a></li>
+         <li><a href="#" class="hover:hover:font-bold">Privacy Policy</a></li>
+         <li><a href="#" class="hover:hover:font-bold">FAQs</a></li>
+         <li><a href="#" class="hover:hover:font-bold">Contact</a></li>
+       </ul>
+     </div>
 
-        <!-- Column 2 -->
-        <div>
-          <h1
-            class="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500 ">
-            Explore</h1>
-          <ul class="space-y-2 text-cyan-400 text-xl">
-            <li><a href="#" class="hover:text-cyan-400">Destinations</a></li>
-            <li><a href="#" class="hover:text-cyan-400">Offers</a></li>
-            <li><a href="#" class="hover:text-cyan-400">Guides</a></li>
-            <li><a href="#" class="hover:text-cyan-400">Testimonials</a></li>
-          </ul>
-        </div>
+     <!-- Column 2 -->
+     <div>
+       <h1
+         class="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500 ">
+         Explore</h1>
+       <ul class="space-y-2 text-cyan-400 text-xl">
+         <li><a href="#" class="hover:font-bold">Destinations</a></li>
+         <li><a href="#" class="hover:font-bold">Offers</a></li>
+         <li><a href="#" class="hover:font-bold">Guides</a></li>
+         <li><a href="#" class="hover:font-bold">Testimonials</a></li>
+       </ul>
+     </div>
 
-        <!-- Column 3 -->
-        <div>
-          <h1
-            class="text-2xl font-semibold mb-4  text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500">
-            Quick Links</h1>
-          <ul class="space-y-2 text-cyan-400 text-xl">
-            <li><a href="#" class="hover:text-cyan-400">About Us</a></li>
-            <li><a href="#" class="hover:text-cyan-400">Careers</a></li>
-            <li><a href="#" class="hover:text-cyan-400">Terms & Conditions</a></li>
-            <li><a href="#" class="hover:text-cyan-400">Support</a></li>
-          </ul>
-        </div>
-      </div>
+     <!-- Column 3 -->
+     <div>
+       <h1
+         class="text-2xl font-semibold mb-4  text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-lime-400 to-teal-500">
+         Quick Links</h1>
+       <ul class="space-y-2 text-cyan-400 text-xl">
+         <li><a href="#" class="hover:font-bold">About Us</a></li>
+         <li><a href="#" class="hover:font-bold">Careers</a></li>
+         <li><a href="#" class="hover:font-bold">Terms & Conditions</a></li>
+         <li><a href="#" class="hover:font-bold">Support</a></li>
+       </ul>
+     </div>
+   </div>
 
-      <!-- Social Media Section -->
-      <div class="mt-12">
-        <h1 class="text-center text-2xl font-semibold text-cyan-400">Follow Us</h1>
-        <div class="flex justify-center space-x-6 mt-6">
-          <a href="#" class="text-white text-2xl  ">
-            <img class=" h-10 w-10 " src="img/facebook (1).png" alt="">
-          </a>
-          <a href="#" class="text-white text-2xl hover:text-cyan-400">
-            <img class="h-10 w-10" src="img/facebook (1).png" alt="">
-          </a>
-          <a href="#" class="text-white text-2xl hover:text-cyan-400">
-            <img class="h-10 w-10" src="img/facebook (1).png" alt="">
-          </a>
-          <a href="#" class="text-white text-2xl hover:text-cyan-400">
-            <img class="h-10 w-10" src="img/facebook (1).png" alt="">
-          </a>
-          <a href="#" class="text-white text-2xl hover:text-cyan-400">
-            <img class="h-10 w-10" src="img/facebook (1).png" alt="">
-          </a>
-        </div>
-      </div>
+   <!-- Social Media Section -->
+   <div class="mt-12">
 
-      <!-- Footer Bottom -->
-      <div class="mt-12 text-center text-gray-400 text-sm">
-        © 2025 Wander Way. All Rights Reserved.
-      </div>
-    </section>
-  </footer>
+     <div class="flex items-center justify-center h-full">
+       <button
+         class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+         type="button">
+         Facebook
+       </button>
+       <button
+         class="text-white bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+         type="button">
+         YouTube
+       </button>
+       <button
+         class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+         type="button">
+         Twitter
+       </button>
+       <button
+         class="text-white bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+         type="button">
+         Instagram
+       </button>
+
+       <section class="flex justify-center items-center">
+         <button id="git" href=""
+           class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-800 to-black text-white font-semibold hover:translate-y-3 transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
+           <svg class="w-5" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path
+               d="M7.49933 0.25C3.49635 0.25 0.25 3.49593 0.25 7.50024C0.25 10.703 2.32715 13.4206 5.2081 14.3797C5.57084 14.446 5.70302 14.2222 5.70302 14.0299C5.70302 13.8576 5.69679 13.4019 5.69323 12.797C3.67661 13.235 3.25112 11.825 3.25112 11.825C2.92132 10.9874 2.44599 10.7644 2.44599 10.7644C1.78773 10.3149 2.49584 10.3238 2.49584 10.3238C3.22353 10.375 3.60629 11.0711 3.60629 11.0711C4.25298 12.1788 5.30335 11.8588 5.71638 11.6732C5.78225 11.205 5.96962 10.8854 6.17658 10.7043C4.56675 10.5209 2.87415 9.89918 2.87415 7.12104C2.87415 6.32925 3.15677 5.68257 3.62053 5.17563C3.54576 4.99226 3.29697 4.25521 3.69174 3.25691C3.69174 3.25691 4.30015 3.06196 5.68522 3.99973C6.26337 3.83906 6.8838 3.75895 7.50022 3.75583C8.1162 3.75895 8.73619 3.83906 9.31523 3.99973C10.6994 3.06196 11.3069 3.25691 11.3069 3.25691C11.7026 4.25521 11.4538 4.99226 11.3795 5.17563C11.8441 5.68257 12.1245 6.32925 12.1245 7.12104C12.1245 9.9063 10.4292 10.5192 8.81452 10.6985C9.07444 10.9224 9.30633 11.3648 9.30633 12.0413C9.30633 13.0102 9.29742 13.7922 9.29742 14.0299C9.29742 14.2239 9.42828 14.4496 9.79591 14.3788C12.6746 13.4179 14.75 10.7025 14.75 7.50024C14.75 3.49593 11.5036 0.25 7.49933 0.25Z"
+               fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+           </svg>
+           <span
+             class="absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700">
+             GitHub
+           </span>
+         </button>
+       </section>
+
+     </div>
+
+   </div>
+
+   <!-- Footer Bottom -->
+   <div class="mt-12 text-center text-gray-400 text-sm">
+     © 2025 Wander Way. All Rights Reserved.
+   </div>
+ </section>
+</footer>
 
 
 

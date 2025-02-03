@@ -41,21 +41,56 @@ showItem(currentIndex);
 
 
 
-const readButGodafoss = document.getElementById("readButGodafoss");
+// const readButGodafoss = document.getElementById("readButGodafoss");
 
-readButGodafoss.addEventListener("click", () => {
-  window.location.href = "godafoss-waterfall.html";
-});
+// readButGodafoss.addEventListener("click", () => {
+//   window.location.href = "godafoss-waterfall.html";
+// });
 
 const bookNow = document.getElementById("bookNow");
 
 bookNow.addEventListener("click", () => {
-  window.location.href =  "booknow.html","_blank" ;
+  window.location.href =  "booknow.html" ;
 });
 
+const bookNow1 = document.getElementById("bookNow1");
+
+bookNow1.addEventListener("click", () => {
+  window.location.href =  "booknow.html" ;
+});
+
+// const bookNowButtons = document.querySelectorAll(".bookNow");
+
+// bookNowButtons.forEach(button => {
+//   button.addEventListener("click", () => {
+//     window.location.href = "booknow.html";
+//   });
+// });
 
 
 
+const writeReviewBtn = document.getElementById("writeReviewBtn");
+    const reviewModal = document.getElementById("reviewModal");
+    const closeModal = document.querySelectorAll("#closeModal");
+  
+    writeReviewBtn.addEventListener("click", () => {
+      reviewModal.classList.remove("hidden");
+      reviewModal.classList.add("flex");
+    });
+  
+    closeModal.forEach(button => {
+      button.addEventListener("click", () => {
+        reviewModal.classList.add("hidden");
+        reviewModal.classList.remove("flex");
+      });
+    });
+
+
+    const gouserpro = document.getElementById("gouserpro");
+
+    gouserpro.addEventListener("click",() => {
+      window.location.href = "userprofile.html";
+    });
 
 
 
@@ -79,7 +114,7 @@ function handleSearch() {
     // Show an alert if the keyword doesn't match
     alert("No matching page found for your search. Try 'waterfall'!");
   }
-}
+};
 
 // Add click event listener to the button
 searchButton.addEventListener("click", handleSearch);
@@ -106,7 +141,7 @@ function addToCart() {
 
   // Optionally, you can alert user or show some message
   alert('Product added to cart!');
-}
+};
 
 
 
@@ -128,7 +163,7 @@ seebali.addEventListener("click", () => {
 const ClimbingKit =document.getElementById ("ClimbingKit");
 
 ClimbingKit.addEventListener("click", () => {
-  window.location.href = "ClimbingKit.html" , "_blank";
+  window.location.href = "ClimbingKit.html" ;
 });
  
 
@@ -139,6 +174,9 @@ shopcat.addEventListener("click", () => {
 });
 
 
+document.getElementById("git").addEventListener("click", function () {
+  window.open("https://github.com/PRASHANT18T", "_blank");
+});
 
 
 
@@ -160,4 +198,4 @@ function addToCart(productId) {
   localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
 
   alert('Product added to cart!');
-}
+};

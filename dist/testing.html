@@ -451,6 +451,189 @@
   }
 </style>
 
+<!-- Header -->
+<header class="text-white relative z-10">
+  <nav class="flex items-center justify-between p-4">
+    <!-- Logo -->
+    <a href="index.html" class="text-2xl font-bold flex-shrink-0 text-black hover:text-blue-200"
+      style="text-shadow: 0px 0px 10px cyan, 0px 0px 20px cyan, 0px 0px 40px cyan, 0px 0px 80px cyan;">
+      Wander Way
+    </a>
+
+    <!-- Search Bar -->
+    <div id="search-bar" class="hidden md:flex items-center">
+      <input id="search-input" type="text" placeholder="Search..."
+        class="px-4 py-2 rounded-l-md bg-white/50 focus:outline-none focus:ring-2 focus:ring-blue-600 text-black" />
+      <button id="search-button" class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600">Search</button>
+    </div>
+
+    <!-- Menu Button (Small Screens) -->
+    <button id="menu-btn" class="md:hidden flex items-center text-white hover:text-blue-400 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+
+    <!-- Menu Links (Hidden by Default for Small Screens) -->
+    <div id="menu-links"
+      class="absolute top-full left-0 w-full bg-gray-900 text-white flex-col space-y-4 p-4 rounded-lg shadow-lg hidden md:flex md:flex-row md:space-x-6 md:space-y-0 md:items-center md:text-sm font-bold lg:text-2xl text-black md:bg-transparent md:static md:shadow-none">
+      <a href="index.html" class="hover:text-blue-200">Home</a>
+      <a href="trips.html" class="hover:text-blue-200">Trips</a>
+      <a href="shop.html" class="hover:text-blue-200">Shop</a>
+      <a href="contact.html" class="hover:text-blue-200">Contact</a>
+      <a href="blogs.html" class="hover:text-blue-200">Blog</a>
+      <a href="cart.html" class="hover:text-blue-200">Cart</a>
+      <a href="indexlogin.html" class="hover:text-blue-200">Login</a>
+      <a href="profile.html" id="profile" class="hover:text-blue-200 hidden">Profile</a>
+    </div>
+  </nav>
+</header>
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const menuLinks = document.getElementById("menu-links");
+
+  menuBtn.addEventListener("click", () => {
+    menuLinks.classList.toggle("hidden");
+    menuLinks.classList.toggle("flex");
+  });
+</script>
+
+
+
+
+  <div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">
+      Meet Our Awesome Travelers
+    </h1>
+    <!-- Grid Container for User Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- User Card 1 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+1" alt="Sophia, Australia" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">Sophia, Australia</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Loves exploring new destinations and sharing her travel adventures.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+      <!-- User Card 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+2" alt="Liam, Canada" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">Liam, Canada</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Foodie and wanderer, always on the hunt for the next adventure.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+      <!-- User Card 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+3" alt="Emma, USA" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">Emma, USA</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Capturing moments and turning them into unforgettable stories.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+      <!-- User Card 4 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+4" alt="Noah, UK" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">Noah, UK</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Explorer at heart, always seeking new horizons.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+      <!-- User Card 5 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+5" alt="Olivia, Italy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">Olivia, Italy</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Art lover and travel enthusiast with a passion for history.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+      <!-- User Card 6 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+6" alt="Ava, France" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">Ava, France</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Passionate about photography and exploring picturesque landscapes.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+      <!-- User Card 7 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+7" alt="William, Germany" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">William, Germany</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Adventurer discovering hidden gems across the globe.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+      <!-- User Card 8 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+8" alt="Sophia, Spain" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">Sophia, Spain</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Bringing vibrant European vibes and captivating travel tales.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+      <!-- User Card 9 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+9" alt="James, Australia" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">James, Australia</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Inspiring others with his adventures and captivating stories.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+      <!-- User Card 10 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x300?text=User+10" alt="Isabella, Brazil" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-bold text-gray-800">Isabella, Brazil</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            A globetrotter sharing mesmerizing tales of vibrant cultures.
+          </p>
+          <a href="#" class="mt-3 inline-block text-blue-500 hover:underline">View Profile</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
 
 
   <!-- Footer -->

@@ -2,185 +2,285 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Booking Process</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderlust Booking</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom background image for header */
+    .travel-header {
+      background: url('https://source.unsplash.com/featured/?travel') no-repeat center center/cover;
+    }
+  </style>
 </head>
 
-<body class="bg-gray-600">
-
-    <!-- Main Container -->
-    <div id="app" class="max-w-4xl mx-auto py-12 px-4">
-        <!-- Progress Bar -->
-        <div class="relative mb-10">
-            <div class="flex justify-between text-sm font-medium mb-3">
-                <span>Step 1: Personal Details</span>
-                <span>Step 2: Health Form</span>
-                <span>Step 3: Travel & Payment</span>
-            </div>
-            <div class="w-full bg-gray-100  rounded-full h-2.5">
-                <div id="progress-bar" class="bg-blue-500 h-2.5 rounded-full" style="width: 33%;"></div>
-            </div>
-        </div>
-
-        <!-- Step 1: Personal Details -->
-        <div id="step1" class="bg-white/50 shadow-lg p-6 rounded-lg">
-            <h2 class="text-2xl font-semibold mb-6">Step 1: Personal Details</h2>
-            <form>
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-gray-700">Full Name</label>
-                        <input type="text" id="full-name" class="w-full p-3 border rounded-md" placeholder="Enter your name">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Email</label>
-                        <input type="email" id="email" class="w-full p-3 border rounded-md" placeholder="Enter your email">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Phone Number</label>
-                        <input type="tel" id="phone" class="w-full p-3 border rounded-md" placeholder="Enter your phone number">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Nationality</label>
-                        <input type="text" id="nationality" class="w-full p-3 border rounded-md" placeholder="Enter your nationality">
-                    </div>
-                    <div class="col-span-2">
-                        <label class="block text-gray-700">Address</label>
-                        <textarea id="address" class="w-full p-3 border rounded-md" rows="3" placeholder="Enter your address"></textarea>
-                    </div>
-                </div>
-            </form>
-            <div class="flex justify-end mt-6">
-                <button id="next1" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Next</button>
-            </div>
-        </div>
-
-        <!-- Step 2: Health Form -->
-        <div id="step2" class="hidden bg-white/50 shadow-lg p-6 rounded-lg">
-            <h2 class="text-2xl font-semibold mb-6">Step 2: Health Form</h2>
-            <form>
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-gray-700">Age</label>
-                        <input type="number" id="age" class="w-full p-3 border rounded-md" placeholder="Enter your age">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Do you have travel insurance?</label>
-                        <select id="insurance" class="w-full p-3 border rounded-md">
-                            <option value="">Select</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Allergies</label>
-                        <textarea id="allergies" class="w-full p-3 border rounded-md" rows="3" placeholder="List any allergies"></textarea>
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Physical Fitness</label>
-                        <select id="fitness" class="w-full p-3 border rounded-md">
-                            <option value="">Select</option>
-                            <option value="excellent">Excellent</option>
-                            <option value="good">Good</option>
-                            <option value="average">Average</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-            <div class="flex justify-between mt-6">
-                <button id="prev2" class="bg-gray-400 text-white px-6 py-2 rounded-md hover:bg-gray-500 transition">Previous</button>
-                <button id="next2" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Next</button>
-            </div>
-        </div>
-
-        <!-- Step 3: Travel & Payment -->
-        <div id="step3" class="hidden bg-white/50 shadow-lg p-6 rounded-lg">
-            <h2 class="text-2xl font-semibold mb-6">Step 3: Travel & Payment</h2>
-            <form>
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-gray-700">Trip Category</label>
-                        <select id="trip-category" class="w-full p-3 border rounded-md">
-                            <option value="">Select</option>
-                            <option value="adventure">Adventure</option>
-                            <option value="cultural">Cultural</option>
-                            <option value="luxury">Luxury</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Number of Members</label>
-                        <input type="number" id="members" class="w-full p-3 border rounded-md" placeholder="Number of members">
-                    </div>
-                    <div class="col-span-2">
-                        <label class="block text-gray-700">Special Requests</label>
-                        <textarea id="special-requests" class="w-full p-3 border rounded-md" rows="3" placeholder="Enter any special requests"></textarea>
-                    </div>
-                    <div class="col-span-2">
-                        <label class="block text-gray-700">Payment Method</label>
-                        <select id="payment-method" class="w-full p-3 border rounded-md">
-                            <option value="">Select</option>
-                            <option value="credit-card">Credit Card</option>
-                            <option value="paypal">PayPal</option>
-                            <option value="upi">UPI</option>
-                            <option value="crypto">Cryptocurrency</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-            <div class="flex justify-between mt-6">
-                <button id="prev3" class="bg-gray-400 text-white px-6 py-2 rounded-md hover:bg-gray-500 transition">Previous</button>
-                <button id="submit" class="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Submit</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-
-const step1 = document.getElementById("step1");
-const step2 = document.getElementById("step2");
-const step3 = document.getElementById("step3");
-const next1 = document.getElementById("next1");
-const next2 = document.getElementById("next2");
-const prev2 = document.getElementById("prev2");
-const prev3 = document.getElementById("prev3");
+<body class="bg-gray-100 font-sans " style="background-image:url(img/travel-concept-with-landmarks.jpg);    background-size: cover;  background-position: center; ">
+  <!-- Header -->
   
 
+  <!-- Main Container -->
+  <div id="app" class="max-w-4xl mx-auto my-10 p-6 bg-black/70  shadow-2xl rounded-lg">
+    <!-- Progress Bar -->
+    <div class="relative mb-10">
+      <div class="flex justify-between text-white text-sm font-medium mb-3">
+        <span>Step 1: Personal Details</span>
+        <span>Step 2: Health & Preferences</span>
+        <span>Step 3: Travel Details</span>
+        <span>Step 4: Payment Details</span>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-2.5">
+        <div id="progress-bar" class="bg-blue-500 h-2.5 rounded-full" style="width: 25%;"></div>
+      </div>
+    </div>
 
+    <!-- Step 1: Personal Details -->
+    <div id="step1">
+      <h2 class="text-2xl font-semibold mb-6 text-white">Step 1: Personal Details</h2>
+      <form>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+          <div>
+            <label for="full-name" class="block text-white mb-1">Full Name</label>
+            <input type="text" id="full-name" class="w-full p-3 border rounded-md" placeholder="Enter your name">
+          </div>
+          <div>
+            <label for="email" class="block text-white mb-1">Email</label>
+            <input type="email" id="email" class="w-full p-3 border rounded-md" placeholder="Enter your email">
+          </div>
+          <div>
+            <label for="phone" class="block text-white mb-1">Phone Number</label>
+            <input type="tel" id="phone" class="w-full p-3 border rounded-md" placeholder="Enter your phone number">
+          </div>
+          <div>
+            <label for="nationality" class="block text-white mb-1">Nationality</label>
+            <input type="text" id="nationality" class="w-full p-3 border rounded-md" placeholder="Enter your nationality">
+          </div>
+          <div class="md:col-span-2">
+            <label for="address" class="block text-white mb-1">Address</label>
+            <textarea id="address" class="w-full p-3 border rounded-md" rows="3" placeholder="Enter your address"></textarea>
+          </div>
+        </div>
+      </form>
+      <div class="flex justify-end mt-6">
+        <button id="next1" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+          Next &rarr;
+        </button>
+      </div>
+    </div>
 
+    <!-- Step 2: Health & Preferences -->
+    <div id="step2" class="hidden">
+      <h2 class="text-2xl font-semibold mb-6 text-white">Step 2: Health & Preferences</h2>
+      <form>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="age" class="block text-white mb-1">Age</label>
+            <input type="number" id="age" class="w-full p-3 border rounded-md" placeholder="Enter your age">
+          </div>
+          <div>
+            <label for="insurance" class="block text-white mb-1">Travel Insurance?</label>
+            <select id="insurance" class="w-full p-3 border rounded-md">
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label for="allergies" class="block text-white mb-1">Allergies (if any)</label>
+            <textarea id="allergies" class="w-full p-3 border rounded-md" rows="3" placeholder="List any allergies"></textarea>
+          </div>
+          <div class="md:col-span-2">
+            <label for="preferences" class="block text-white mb-1">Travel Preferences</label>
+            <input type="text" id="preferences" class="w-full p-3 border rounded-md" placeholder="e.g., Adventure, Leisure, Cultural">
+          </div>
+        </div>
+      </form>
+      <div class="flex justify-between mt-6">
+        <button id="prev2" class="bg-gray-400 text-white px-6 py-2 rounded-md hover:bg-gray-500 transition">
+          &larr; Previous
+        </button>
+        <button id="next2" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+          Next &rarr;
+        </button>
+      </div>
+    </div>
 
+    <!-- Step 3: Travel Details -->
+    <div id="step3" class="hidden">
+      <h2 class="text-2xl font-semibold mb-6 text-white">Step 3: Travel Details</h2>
+      <form>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="trip-category" class="block text-white mb-1">Trip Category</label>
+            <select id="trip-category" class="w-full p-3 border rounded-md">
+              <option value="">Select</option>
+              <option value="adventure">Adventure</option>
+              <option value="cultural">Cultural</option>
+              <option value="luxury">Luxury</option>
+              <option value="budget">Budget</option>
+            </select>
+          </div>
+          <div>
+            <label for="members" class="block text-white mb-1 text-white">Number of Travelers</label>
+            <input type="number" id="members" class="w-full p-3 border rounded-md" placeholder="Enter number of travelers">
+          </div>
+          <div class="md:col-span-2">
+            <label for="special-requests" class="block text-white mb-1">Special Requests</label>
+            <textarea id="special-requests" class="w-full p-3 border rounded-md" rows="3" placeholder="Enter any special requests"></textarea>
+          </div>
+        </div>
+      </form>
+      <div class="flex justify-between mt-6">
+        <button id="prev3" class="bg-gray-400 text-white px-6 py-2 rounded-md hover:bg-gray-500 transition">
+          &larr; Previous
+        </button>
+        <button id="next3" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+          Next &rarr;
+        </button>
+      </div>
+    </div>
 
-next1.addEventListener("click", () => {
+    <!-- Step 4: Payment Details -->
+    <div id="step4" class="hidden">
+        <h2 class="text-2xl font-semibold mb-6 text-white">Step 4: Payment Details</h2>
+        <form>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Payment Method Selection -->
+            <div class="md:col-span-2">
+              <label for="payment-method" class="block text-white mb-1">Payment Method</label>
+              <select id="payment-method" class="w-full p-3 border rounded-md">
+                <option value="">Select</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="upi">UPI</option>
+                <option value="crypto">Cryptocurrency</option>
+              </select>
+            </div>
+            
+            <!-- Credit Card Information -->
+            <div id="credit-card-info" class="hidden md:col-span-2">
+              <label for="card-number" class="block text-white mb-1">Card Number</label>
+              <input type="text" id="card-number" class="w-full p-3 border rounded-md" placeholder="Enter your card number">
+              <div class="grid grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label for="expiry-date" class="block text-white mb-1">Expiry Date</label>
+                  <input type="text" id="expiry-date" class="w-full p-3 border rounded-md" placeholder="MM/YY">
+                </div>
+                <div>
+                  <label for="cvv" class="block text-white mb-1">CVV</label>
+                  <input type="password" id="cvv" class="w-full p-3 border rounded-md" placeholder="CVV">
+                </div>
+              </div>
+            </div>
+            
+            <!-- Other Payment Methods Information -->
+            <div id="other-payment-info" class="hidden md:col-span-2">
+              <label for="payment-info" class="block text-white mb-1">Payment Information</label>
+              <input type="text" id="payment-info" class="w-full p-3 border rounded-md" placeholder="Enter transaction ID or relevant info">
+            </div>
+          </div>
+        </form>
+        <div class="flex justify-between mt-6">
+          <button id="prev4" class="bg-gray-400 text-white px-6 py-2 rounded-md hover:bg-gray-500 transition">
+            &larr; Previous
+          </button>
+          <button id="submit" class="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">
+            Submit Booking
+          </button>
+        </div>
+      </div>
+      
+      <!-- JavaScript to Toggle Payment Fields Based on Payment Method -->
+      <script>
+        const paymentMethodSelect = document.getElementById('payment-method');
+        const creditCardInfo = document.getElementById('credit-card-info');
+        const otherPaymentInfo = document.getElementById('other-payment-info');
+      
+        paymentMethodSelect.addEventListener('change', () => {
+          const method = paymentMethodSelect.value;
+          
+          // If 'credit-card' is selected, show credit card fields and hide others.
+          if(method === 'credit-card') {
+            creditCardInfo.classList.remove('hidden');
+            otherPaymentInfo.classList.add('hidden');
+          } else if(method !== "") {
+            // For all other methods, show the generic payment info field.
+            otherPaymentInfo.classList.remove('hidden');
+            creditCardInfo.classList.add('hidden');
+          } else {
+            // If no method selected, hide both.
+            creditCardInfo.classList.add('hidden');
+            otherPaymentInfo.classList.add('hidden');
+          }
+        });
+      </script>
+      
+
+  <!-- JavaScript for Step Navigation -->
+  <script>
+    const step1 = document.getElementById("step1");
+    const step2 = document.getElementById("step2");
+    const step3 = document.getElementById("step3");
+    const step4 = document.getElementById("step4");
+    const progressBar = document.getElementById("progress-bar");
+
+    // Buttons
+    const next1 = document.getElementById("next1");
+    const next2 = document.getElementById("next2");
+    const next3 = document.getElementById("next3");
+    const prev2 = document.getElementById("prev2");
+    const prev3 = document.getElementById("prev3");
+    const prev4 = document.getElementById("prev4");
+
+    next1.addEventListener("click", () => {
       step1.classList.add("hidden");
       step2.classList.remove("hidden");
+      progressBar.style.width = "25%";
+      // Transition to Step 2 (25% completed)
+      progressBar.style.width = "50%";
     });
 
     prev2.addEventListener("click", () => {
-      step1.classList.remove("hidden");
       step2.classList.add("hidden");
+      step1.classList.remove("hidden");
+      progressBar.style.width = "25%";
     });
 
     next2.addEventListener("click", () => {
       step2.classList.add("hidden");
       step3.classList.remove("hidden");
+      progressBar.style.width = "75%";
     });
 
     prev3.addEventListener("click", () => {
-      step2.classList.remove("hidden");
       step3.classList.add("hidden");
+      step2.classList.remove("hidden");
+      progressBar.style.width = "50%";
+    });
+
+    next3.addEventListener("click", () => {
+      step3.classList.add("hidden");
+      step4.classList.remove("hidden");
+      progressBar.style.width = "100%";
+    });
+
+    prev4.addEventListener("click", () => {
+      step4.classList.add("hidden");
+      step3.classList.remove("hidden");
+      progressBar.style.width = "75%";
+    });
+
+    document.getElementById("submit").addEventListener("click", () => {
+      alert("Congratulations! Your travel booking has been submitted. Bon Voyage!");
+      // Optionally, you can clear the form or redirect to another page.
+      // For now, we simply reload the page.
+      history.back();
     });
 
 
-
-
-        
-    document.getElementById('submit').addEventListener('click', () => {
-  alert('Booking Submitted!');
-  history.back(); // Navigate to the previous page
-});
-
-    </script>
-
+    
+  </script>
 </body>
 
 </html>

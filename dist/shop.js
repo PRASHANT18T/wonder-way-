@@ -1,6 +1,6 @@
 // JavaScript for slideshow functionality
 const images = document.querySelectorAll('#slideshow img');
-let currentIndex = 0;
+let currentIndex = 1;
 
 setInterval(() => {
   images[currentIndex].classList.remove('opacity-100');
