@@ -47,43 +47,65 @@ showItem(currentIndex);
 //   window.location.href = "godafoss-waterfall.html";
 // });
 
-const bookNow = document.getElementById("bookNow");
+// const bookNow = document.getElementById("bookNow");
 
-bookNow.addEventListener("click", () => {
-  window.location.href =  "booknow.html" ;
-});
-
-const bookNow1 = document.getElementById("bookNow1");
-
-bookNow1.addEventListener("click", () => {
-  window.location.href =  "booknow.html" ;
-});
-
-// const bookNowButtons = document.querySelectorAll(".bookNow");
-
-// bookNowButtons.forEach(button => {
-//   button.addEventListener("click", () => {
-//     window.location.href = "booknow.html";
-//   });
+// bookNow.addEventListener("click", () => {
+//   window.location.href =  "booknow.html" ;
 // });
+
+// const bookNow1 = document.getElementById("bookNow1");
+
+// bookNow1.addEventListener("click", () => {
+//   window.location.href =  "booknow.html" ;
+// });
+
+const bookNowButtons = document.querySelectorAll(".bookNow");
+
+bookNowButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    window.location.href = "booknow.html";
+  });
+});
+
+
+
 
 
 
 const writeReviewBtn = document.getElementById("writeReviewBtn");
-    const reviewModal = document.getElementById("reviewModal");
-    const closeModal = document.querySelectorAll("#closeModal");
-  
-    writeReviewBtn.addEventListener("click", () => {
-      reviewModal.classList.remove("hidden");
-      reviewModal.classList.add("flex");
-    });
-  
-    closeModal.forEach(button => {
-      button.addEventListener("click", () => {
-        reviewModal.classList.add("hidden");
-        reviewModal.classList.remove("flex");
-      });
-    });
+const reviewModal = document.getElementById("reviewModal");
+const closeModal = document.querySelectorAll("#closeModal, #cancelModal");
+const userImage = document.getElementById("userImage");
+const imagePreview = document.getElementById("imagePreview");
+
+writeReviewBtn.addEventListener("click", () => {
+  reviewModal.classList.remove("hidden");
+  reviewModal.classList.add("opacity-100");
+});
+
+closeModal.forEach(button => {
+  button.addEventListener("click", () => {
+    reviewModal.classList.add("hidden");
+    reviewModal.classList.remove("opacity-100");
+  });
+});
+
+userImage.addEventListener("change", function(event) {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      imagePreview.innerHTML = `<img src="${e.target.result}" class="w-full h-full object-cover rounded-full">`;
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+
+
+
+
+
 
 
     const gouserpro = document.getElementById("gouserpro");

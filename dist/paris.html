@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Trip</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <header>
+    <nav class="absolute top-0 left-0 w-full flex items-center justify-between p-4 z-30 bg-black/50">
+        <div class="text-white font-bold text-xl">
+          <a href="#">Wonder Way</a>
+        </div>
+        <div class="flex items-center space-x-2">
+          <input type="text" placeholder="Search..." class="p-2 rounded bg-white/20 text-white focus:outline-none focus:ring focus:ring-blue-300" />
+          <button class="p-2 bg-blue-500 text-white rounded hover:bg-blue-600">Search</button>
+        </div>
+        <div class="hidden md:flex md:flex-row md:space-x-6 font-bold text-xl text-white">
+          <a href="index.html" class="hover:text-blue-200">Home</a>
+          <a href="trips.html" class="hover:text-blue-200">Trips</a>
+          <a href="contact.html" class="hover:text-blue-200">Contact</a>
+          <a href="blogs.html" class="hover:text-blue-200">Blog</a>
+          <a href="login.html" class="hover:text-blue-200">Login</a>
+          <a href="cart.html" class="hover:text-blue-200">Cart</a>
+          <a href="profile.html" class="hover:text-blue-200">Profile</a>
+        </div>
+      </nav>
+ </header>    
+
+ <!-- Hero Section -->
+<section class="relative w-full h-[500px]">
+  <img src="img/paris-eiffel-tower.jpg" alt="Paris" class="w-full h-full object-cover absolute">
+  <div class="absolute inset-0 bg-opacity-40 flex items-center justify-center">
+      <h1 class="text-white text-5xl font-bold">Discover Magical Paris</h1>
+  </div>
+  <a href="booknow.html" class="absolute bottom-6 right-6 bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">
+      Book Now
+  </a>
+</section>
+
+<!-- Key Information -->
+<section class="container mx-auto my-12 px-6 lg:px-20">
+    <h2 class="text-3xl font-bold mb-6">Why Visit Paris?</h2>
+    <p class="text-lg leading-7">Paris, the City of Love, is home to breathtaking landmarks, rich history, and world-renowned cuisine. From the Eiffel Tower to the Louvre, every corner is filled with beauty and charm.</p>
+    <div class="mt-6 flex flex-wrap gap-6">
+        <div class="bg-white p-6 shadow-lg rounded-lg w-full md:w-[30%] text-center">
+            <h3 class="text-xl font-semibold">Best Time to Visit</h3>
+            <p>April - June & September - November</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg w-full md:w-[30%] text-center">
+            <h3 class="text-xl font-semibold">Average Rating</h3>
+            <p class="text-yellow-500 text-2xl">⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg w-full md:w-[30%] text-center">
+            <h3 class="text-xl font-semibold">Currency & Language</h3>
+            <p>Euro (€), French & English</p>
+        </div>
+    </div>
+</section>
+
+<!-- Vacation Plan -->
+<section class="bg-blue-50 py-12 px-6 lg:px-20">
+    <h2 class="text-3xl font-bold mb-6 text-center">Your Perfect Paris Itinerary</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Day 1: Eiffel Tower & Seine River Cruise</h3>
+            <p>Visit the iconic Eiffel Tower, enjoy a romantic Seine River cruise, and explore Champs-Élysées.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Day 2: Louvre Museum & Notre-Dame</h3>
+            <p>Explore the world's largest art museum, the Louvre, and visit the historic Notre-Dame Cathedral.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Day 3: Montmartre & Sacré-Cœur</h3>
+            <p>Discover the artistic charm of Montmartre, visit Sacré-Cœur Basilica, and enjoy street performances.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Day 4: Palace of Versailles</h3>
+            <p>Take a day trip to the opulent Palace of Versailles and stroll through its magnificent gardens.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Visitor Reviews -->
+<section class="container mx-auto my-12 px-6 lg:px-20">
+    <h2 class="text-3xl font-bold mb-6">What Visitors Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+            <p class="italic">“Paris stole my heart! The Eiffel Tower at night is a must-see. Absolutely breathtaking!”</p>
+            <p class="text-right mt-4 font-semibold">— Olivia, USA</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+            <p class="italic">“Exploring Montmartre was like stepping into an artist’s dream. Paris is magical!”</p>
+            <p class="text-right mt-4 font-semibold">— Arjun, India</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+            <p class="italic">“Best trip ever! From croissants to the Louvre, every moment was unforgettable.”</p>
+            <p class="text-right mt-4 font-semibold">— Sophie, UK</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
