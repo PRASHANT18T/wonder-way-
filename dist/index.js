@@ -68,7 +68,11 @@ bookNowButtons.forEach(button => {
 });
 
 
+const cameradetails = document.getElementById("cameradetails");
 
+cameradetails.addEventListener("click",()=> {
+  window.location.href = "CameraDetails.html";
+});
 
 
 

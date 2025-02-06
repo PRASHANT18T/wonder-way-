@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSAP ScrollTrigger Demo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    section { height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .box { width: 200px; height: 200px; background: #3498db; }
+  </style>
+</head>
+<body>
+  <section style="background: #1abc9c;">
+    <div class="box"></div>
+  </section>
+  <section style="background: #9b59b6;"></section>
+  <section style="background: #e74c3c;"></section>
+  
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".box", {
+      rotation: 360,
+      scrollTrigger: {
+        trigger: ".box",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true,
+        markers: true // Only for debugging
+      }
+    });
+  </script>
+</body>
+</html>
