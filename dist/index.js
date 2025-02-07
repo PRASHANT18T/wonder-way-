@@ -123,6 +123,8 @@ userImage.addEventListener("change", function(event) {
 // Keyword-to-page mapping
 const keywordToPage = {
   waterfall: "godafoss-waterfall.html", // Redirects to Godafoss Waterfall page
+
+  bali:"seemorebali.html",
 };
 
 // Get input and button elements

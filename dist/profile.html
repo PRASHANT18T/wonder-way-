@@ -1,103 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Profile - Travel Management</title>
+  <!-- Tailwind CSS CDN -->
+<link rel="stylesheet" href="index.css">
 </head>
-
-<body class="bg-gray-500 p-8">
-    <div class="max-w-3xl mx-auto bg-gray-400 p-6 rounded-lg shadow-lg">
-        <h1 class="text-2xl font-semibold mb-6 text-center">Your Profile</h1>
-
-        <div class="  rounded-lg  text-center">
-            <label for="profile-input" class="cursor-pointer">
-                <img id="profile-picture" class="w-32 h-32 rounded-full border-4 border-indigo-500 mx-auto"
-                    src="https://via.placeholder.com/150" alt="Profile Picture" />
-            </label>
-            <input type="file" id="profile-input" class="hidden" accept="image/*" />
-
+<body class="bg-blue-300">
+  <div class="max-w-4xl mx-auto p-4">
+    <!-- User Profile Section -->
+    <div class="bg-white shadow rounded-lg p-6 mb-6">
+        <div class="flex items-center">
+          <img class="w-20 h-20 rounded-full object-cover" src="img/man-traveller-walk-arund-icelandic-landscape.jpg" alt="User Profile Image" />
+          <div class="ml-4">
+            <h1 class="text-2xl font-bold">prashant</h1>
+            <p class="text-gray-600">new mumbai, india</p>
+            <p class="text-gray-500 mt-1">Traveler | Adventurer | Food Lover</p>
+            <p class="text-blue-500 mt-1">mrprashant18t@gmail.com</p>
+          </div>
+          <!-- Home Button on Right -->
+          <button id="home" class="ml-auto bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            Home
+          </button>
         </div>
-
-
-        <p><strong class="font-medium text-2xl">Name:</strong> <span id="profile-name"
-                class="text-gray-700 text-xl ">Loading...</span></p>
-        <p><strong class="font-medium text-2xl">Bio:</strong> <span id="bio"
-                class="text-gray-700 text-xl">Loading...</span></p>
-        <p><strong class="font-medium text-2xl">Date of Birth:</strong> <span id="dob"
-                class="text-gray-700 text-xl">Loading...</span></p>
-        <p><strong class="font-medium text-2xl">Location:</strong> <span id="location"
-                class="text-gray-700 text-xl">Loading...</span></p>
-        <p><strong class="font-medium text-2xl">Interests:</strong> <span id="interests"
-                class="text-gray-700 text-xl">Loading...</span></p>
-        <p><strong class="font-medium text-2xl">Trip History:</strong> <span id="trip-history"
-                class="text-gray-700 text-xl">Loading...</span></p>
-        <p><strong class="font-medium text-2xl">Upcoming Trips:</strong> <span id="upcoming-trips"
-                class="text-gray-700 text-xl">Loading...</span></p>
-        <p><strong class="font-medium text-2xl">Blogs:</strong> <span id="blogs"
-                class="text-gray-700 text-xl">Loading...</span></p>
-        <p><strong class="font-medium text-2xl">Social Links:</strong> <span id="social-links"
-                class="text-gray-700 text-xl">Loading...</span></p>
-
-        <div class="text-center mt-6">
-            <button onclick="editProfile()"
-                class="bg-blue-500 text-white p-3 rounded-md w-full hover:bg-blue-600 transition duration-300">Edit
-                Profile</button>
-        </div>
-        <div class="text-center mt-6">
-            <button id="gohome"
-                class="bg-blue-500 text-white p-3 rounded-md w-full hover:bg-blue-600 transition duration-300">home</button>
-        </div>
+      </div>
+      
+      
+    <!-- Navigation Buttons -->
+    <div class="bg-white shadow rounded-lg p-4 mb-6">
+      <div class="flex flex-wrap justify-around">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mb-2">Completed Trips</button>
+        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 mb-2">Next Trip</button>
+        <button class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 mb-2">Products</button>
+        <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 mb-2">Cart</button>
+      </div>
     </div>
 
-    <script>
-        const profileData = JSON.parse(localStorage.getItem('profileData'));
+    <!-- Reviews Section -->
+    <div class="bg-white shadow rounded-lg p-6 mb-6">
+      <h2 class="text-xl font-semibold mb-4">Reviews</h2>
+      <!-- Trip Review -->
+      <div class="mb-4">
+        <h3 class="text-lg font-bold">Trip Review</h3>
+        <p class="text-gray-700">
+          "Had an amazing time on my trip! The experience was unforgettable. Highly recommended!"
+        </p>
+      </div>
+      <!-- Product Review -->
+      <div>
+        <h3 class="text-lg font-bold">Product Review</h3>
+        <p class="text-gray-700">
+          "The travel gear I purchased was top-notch and really enhanced my journey."
+        </p>
+      </div>
+    </div>
 
-        if (profileData) {
-            document.getElementById('profile-name').innerText = profileData.profileName;
-            document.getElementById('bio').innerText = profileData.bio;
-            document.getElementById('dob').innerText = profileData.dob;
-            document.getElementById('location').innerText = profileData.location;
-            document.getElementById('interests').innerText = profileData.interests;
-            document.getElementById('trip-history').innerText = profileData.tripHistory;
-            document.getElementById('upcoming-trips').innerText = profileData.upcomingTrips;
-            document.getElementById('blogs').innerText = profileData.blogs;
-            document.getElementById('social-links').innerText = profileData.socialLinks;
-        } else {
-            alert('No profile found! Please create one.');
-            window.location.href = 'profileedit.html';
-        }
+    <!-- Account Settings Section -->
+    <div class="bg-white shadow rounded-lg p-6">
+      <h2 class="text-xl font-semibold mb-4">Account Settings</h2>
+      <ul class="flex justify-between items-center">
+        <li>
+          <button class=" text-center px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600">
+           Membership
+          </button>
+        </li>
+        <li>
+          <button class=" text-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            Edit Profile
+          </button>
+        </li>
+        <li>
+          <button class=" text-center px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
+            Q&A
+          </button>
+        </li>
+        <li>
+          <button class=" text-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+            Terms and Conditions
+          </button>
+        </li>
+        <li>
+          <button id="logoutBtn" class=" text-center px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
+            Logout
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-        function editProfile() {
-            window.location.href = 'profileedit.html';
-        }
+  <!-- JavaScript for Logout -->
+  <script>
+    document.getElementById('logoutBtn').addEventListener('click', function () {
+      if (confirm("Are you sure you want to logout?")) {
+        // Placeholder: implement your logout functionality here
+        alert("Logged out successfully!");
+        // Example: window.location.href = '/logout'; // Uncomment when you have a logout route
+      }
+    });
 
 
-        const gohome = document.getElementById("gohome");
-
-        gohome.addEventListener("click", () => {
-            window.location.href = ("index2.html");
-        });
-
-
-        const profileInput = document.getElementById("profile-input");
-        const profilePicture = document.getElementById("profile-picture");
-
-        profileInput.addEventListener("change", function (event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    profilePicture.src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-
-
-    </script>
+    document.getElementById("home").addEventListener("click", () => {
+        window.location.href = "index.html";
+    });
+  </script>
 </body>
-
 </html>
